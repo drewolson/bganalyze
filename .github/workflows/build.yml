@@ -16,15 +16,19 @@ jobs:
           - goos: darwin
             goarch: arm64
             name: bganalyze-macos-arm64
+            archive: tar.gz
           - goos: linux
             goarch: amd64
             name: bganalyze-linux-amd64
+            archive: tar.gz
           - goos: linux
             goarch: arm64
             name: bganalyze-linux-arm64
+            archive: tar.gz
           - goos: windows
             goarch: amd64
             name: bganalyze-windows-amd64
+            archive: zip
 
     steps:
       - uses: actions/checkout@v4
@@ -42,19 +46,26 @@ jobs:
       - name: Build frontend
         run: cd frontend && npm ci && npm run build
 
-      - name: Cross-compile
+      - name: Cross-compile and archive
         env:
           GOOS: ${{ matrix.goos }}
           GOARCH: ${{ matrix.goarch }}
         run: |
           EXT=""
           if [ "$GOOS" = "windows" ]; then EXT=".exe"; fi
-          go build -o "${{ matrix.name }}${EXT}" .
+          BINARY="${{ matrix.name }}${EXT}"
+          go build -o "$BINARY" .
+          chmod +x "$BINARY"
+          if [ "${{ matrix.archive }}" = "zip" ]; then
+            zip "${{ matrix.name }}.zip" "$BINARY"
+          else
+            tar czf "${{ matrix.name }}.tar.gz" "$BINARY"
+          fi
 
       - uses: actions/upload-artifact@v4
         with:
           name: ${{ matrix.name }}
-          path: ${{ matrix.name }}*
+          path: ${{ matrix.name }}.${{ matrix.archive }}
 
   release:
     needs: build
@@ -64,7 +75,7 @@ jobs:
         with:
           path: artifacts
 
-      - name: Collect binaries
+      - name: Collect archives
         run: |
           mkdir release
           for dir in artifacts/*/; do
