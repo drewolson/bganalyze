@@ -54,7 +54,7 @@ jobs:
           EXT=""
           if [ "$GOOS" = "windows" ]; then EXT=".exe"; fi
           BINARY="${{ matrix.name }}${EXT}"
-          go build -o "$BINARY" .
+          go build -o "$BINARY" ./backend/cmd/bganalyze
           chmod +x "$BINARY"
           if [ "${{ matrix.archive }}" = "zip" ]; then
             zip "${{ matrix.name }}.zip" "$BINARY"
