@@ -8,12 +8,12 @@ build-frontend: frontend/node_modules
 	cd frontend && npm run build
 
 build: build-frontend
-	go build -o bganalyze .
+	go build ./backend/cmd/bganalyze
 
 run: build
 	./bganalyze
 
-test: test-go test-frontend
+test: test-frontend test-go
 
 test-go:
 	go test ./...

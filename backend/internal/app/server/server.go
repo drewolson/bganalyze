@@ -15,7 +15,7 @@ import (
 	"strings"
 	"sync"
 
-	"bganalyze/gnubg"
+	"bganalyze/backend/internal/pkg/gnubg"
 )
 
 // AnalyzeFunc is the signature for a function that analyzes a MAT file

@@ -1,18 +1,20 @@
-package gnubg
+package gnubg_test
 
 import (
 	"math"
 	"testing"
+
+	"bganalyze/backend/internal/pkg/gnubg"
 )
 
-const fixtureDir = "../testdata/heroes-analysis"
+const fixtureDir = "../../../../testdata/heroes-analysis"
 
 func approx(a, b float64) bool {
 	return math.Abs(a-b) < 0.002
 }
 
 func TestParseMatchFiles(t *testing.T) {
-	md, err := ParseMatchFiles(fixtureDir)
+	md, err := gnubg.ParseMatchFiles(fixtureDir)
 	if err != nil {
 		t.Fatalf("ParseMatchFiles: %v", err)
 	}
@@ -38,7 +40,7 @@ func TestParseMatchFiles(t *testing.T) {
 }
 
 func TestParseScoreBefore(t *testing.T) {
-	md, err := ParseMatchFiles(fixtureDir)
+	md, err := gnubg.ParseMatchFiles(fixtureDir)
 	if err != nil {
 		t.Fatalf("ParseMatchFiles: %v", err)
 	}
@@ -54,7 +56,7 @@ func TestParseScoreBefore(t *testing.T) {
 }
 
 func TestParseGame1Moves(t *testing.T) {
-	md, err := ParseMatchFiles(fixtureDir)
+	md, err := gnubg.ParseMatchFiles(fixtureDir)
 	if err != nil {
 		t.Fatalf("ParseMatchFiles: %v", err)
 	}
@@ -106,7 +108,7 @@ func TestParseGame1Moves(t *testing.T) {
 }
 
 func TestParseMoveAlternatives(t *testing.T) {
-	md, err := ParseMatchFiles(fixtureDir)
+	md, err := gnubg.ParseMatchFiles(fixtureDir)
 	if err != nil {
 		t.Fatalf("ParseMatchFiles: %v", err)
 	}
@@ -149,7 +151,7 @@ func TestParseMoveAlternatives(t *testing.T) {
 }
 
 func TestParseCubeAnalysis(t *testing.T) {
-	md, err := ParseMatchFiles(fixtureDir)
+	md, err := gnubg.ParseMatchFiles(fixtureDir)
 	if err != nil {
 		t.Fatalf("ParseMatchFiles: %v", err)
 	}
@@ -178,7 +180,7 @@ func TestParseCubeAnalysis(t *testing.T) {
 }
 
 func TestParseCannotMove(t *testing.T) {
-	md, err := ParseMatchFiles(fixtureDir)
+	md, err := gnubg.ParseMatchFiles(fixtureDir)
 	if err != nil {
 		t.Fatalf("ParseMatchFiles: %v", err)
 	}
@@ -197,14 +199,14 @@ func TestParseCannotMove(t *testing.T) {
 }
 
 func TestParseCubeDecisionAndDouble(t *testing.T) {
-	md, err := ParseMatchFiles(fixtureDir)
+	md, err := gnubg.ParseMatchFiles(fixtureDir)
 	if err != nil {
 		t.Fatalf("ParseMatchFiles: %v", err)
 	}
 
 	g1 := md.Games[0]
 	// cube_decision is merged into the double — no separate cube_decision move
-	var doubleMove, rejectMove *Move
+	var doubleMove, rejectMove *gnubg.Move
 	for i := range g1.Moves {
 		m := &g1.Moves[i]
 		if m.Number == 13 && m.Type == "cube_decision" {
@@ -239,7 +241,7 @@ func TestParseCubeDecisionAndDouble(t *testing.T) {
 }
 
 func TestParseGameStats(t *testing.T) {
-	md, err := ParseMatchFiles(fixtureDir)
+	md, err := gnubg.ParseMatchFiles(fixtureDir)
 	if err != nil {
 		t.Fatalf("ParseMatchFiles: %v", err)
 	}
@@ -298,7 +300,7 @@ func TestParseGameStats(t *testing.T) {
 }
 
 func TestParseMatchStats(t *testing.T) {
-	md, err := ParseMatchFiles(fixtureDir)
+	md, err := gnubg.ParseMatchFiles(fixtureDir)
 	if err != nil {
 		t.Fatalf("ParseMatchFiles: %v", err)
 	}
@@ -341,7 +343,7 @@ func TestParseMatchStats(t *testing.T) {
 }
 
 func TestParseGame5Winner(t *testing.T) {
-	md, err := ParseMatchFiles(fixtureDir)
+	md, err := gnubg.ParseMatchFiles(fixtureDir)
 	if err != nil {
 		t.Fatalf("ParseMatchFiles: %v", err)
 	}

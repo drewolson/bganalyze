@@ -1,4 +1,4 @@
-package server
+package server_test
 
 import (
 	"encoding/json"
@@ -7,11 +7,13 @@ import (
 	"path/filepath"
 	"strings"
 	"testing"
+
+	"bganalyze/backend/internal/app/server"
 )
 
-func openTestStore(t *testing.T) *HistoryStore {
+func openTestStore(t *testing.T) *server.HistoryStore {
 	t.Helper()
-	s, err := OpenHistoryStore(filepath.Join(t.TempDir(), "test.db"))
+	s, err := server.OpenHistoryStore(filepath.Join(t.TempDir(), "test.db"))
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -33,8 +35,8 @@ func TestStoreListEmpty(t *testing.T) {
 func TestStoreSaveAndList(t *testing.T) {
 	s := openTestStore(t)
 
-	e1 := HistoryEntry{ID: "a", Player1: "Alice", Player2: "Bob", Date: "2025-01-02T00:00:00Z", Data: json.RawMessage(`{}`)}
-	e2 := HistoryEntry{ID: "b", Player1: "Carol", Player2: "Dave", Date: "2025-01-03T00:00:00Z", Data: json.RawMessage(`{}`)}
+	e1 := server.HistoryEntry{ID: "a", Player1: "Alice", Player2: "Bob", Date: "2025-01-02T00:00:00Z", Data: json.RawMessage(`{}`)}
+	e2 := server.HistoryEntry{ID: "b", Player1: "Carol", Player2: "Dave", Date: "2025-01-03T00:00:00Z", Data: json.RawMessage(`{}`)}
 
 	if err := s.Save(e1); err != nil {
 		t.Fatal(err)
@@ -62,7 +64,7 @@ func TestStoreSaveAndList(t *testing.T) {
 func TestStoreSaveUpsert(t *testing.T) {
 	s := openTestStore(t)
 
-	e := HistoryEntry{ID: "a", Player1: "Alice", Player2: "Bob", Date: "2025-01-01T00:00:00Z", Data: json.RawMessage(`{}`)}
+	e := server.HistoryEntry{ID: "a", Player1: "Alice", Player2: "Bob", Date: "2025-01-01T00:00:00Z", Data: json.RawMessage(`{}`)}
 	if err := s.Save(e); err != nil {
 		t.Fatal(err)
 	}
@@ -87,10 +89,10 @@ func TestStoreSaveUpsert(t *testing.T) {
 func TestStoreDelete(t *testing.T) {
 	s := openTestStore(t)
 
-	if err := s.Save(HistoryEntry{ID: "a", Data: json.RawMessage(`{}`)}); err != nil {
+	if err := s.Save(server.HistoryEntry{ID: "a", Data: json.RawMessage(`{}`)}); err != nil {
 		t.Fatal(err)
 	}
-	if err := s.Save(HistoryEntry{ID: "b", Data: json.RawMessage(`{}`)}); err != nil {
+	if err := s.Save(server.HistoryEntry{ID: "b", Data: json.RawMessage(`{}`)}); err != nil {
 		t.Fatal(err)
 	}
 
@@ -113,10 +115,10 @@ func TestStoreDelete(t *testing.T) {
 func TestStoreClear(t *testing.T) {
 	s := openTestStore(t)
 
-	if err := s.Save(HistoryEntry{ID: "a", Data: json.RawMessage(`{}`)}); err != nil {
+	if err := s.Save(server.HistoryEntry{ID: "a", Data: json.RawMessage(`{}`)}); err != nil {
 		t.Fatal(err)
 	}
-	if err := s.Save(HistoryEntry{ID: "b", Data: json.RawMessage(`{}`)}); err != nil {
+	if err := s.Save(server.HistoryEntry{ID: "b", Data: json.RawMessage(`{}`)}); err != nil {
 		t.Fatal(err)
 	}
 
@@ -136,7 +138,7 @@ func TestStoreClear(t *testing.T) {
 func TestStoreUpdateFlipped(t *testing.T) {
 	s := openTestStore(t)
 
-	if err := s.Save(HistoryEntry{ID: "a", Flipped: false, Data: json.RawMessage(`{}`)}); err != nil {
+	if err := s.Save(server.HistoryEntry{ID: "a", Flipped: false, Data: json.RawMessage(`{}`)}); err != nil {
 		t.Fatal(err)
 	}
 
@@ -167,14 +169,14 @@ func TestStoreCompaction(t *testing.T) {
 	dbPath := filepath.Join(dir, "compact.db")
 
 	// Write many entries then close.
-	s, err := OpenHistoryStore(dbPath)
+	s, err := server.OpenHistoryStore(dbPath)
 	if err != nil {
 		t.Fatal(err)
 	}
 	bigData := json.RawMessage(`{"payload":"` + strings.Repeat("x", 4096) + `"}`)
 	for i := range 100 {
 		id := fmt.Sprintf("entry-%03d", i)
-		if err := s.Save(HistoryEntry{ID: id, Data: bigData}); err != nil {
+		if err := s.Save(server.HistoryEntry{ID: id, Data: bigData}); err != nil {
 			t.Fatal(err)
 		}
 	}
@@ -188,20 +190,20 @@ func TestStoreCompaction(t *testing.T) {
 	peakSize := peakInfo.Size()
 
 	// Reopen, clear, write one small entry, then close.
-	s, err = OpenHistoryStore(dbPath)
+	s, err = server.OpenHistoryStore(dbPath)
 	if err != nil {
 		t.Fatal(err)
 	}
 	if err := s.Clear(); err != nil {
 		t.Fatal(err)
 	}
-	if err := s.Save(HistoryEntry{ID: "survivor", Player1: "Alice", Data: json.RawMessage(`{}`)}); err != nil {
+	if err := s.Save(server.HistoryEntry{ID: "survivor", Player1: "Alice", Data: json.RawMessage(`{}`)}); err != nil {
 		t.Fatal(err)
 	}
 	s.Close()
 
 	// Reopen — triggers compaction.
-	s, err = OpenHistoryStore(dbPath)
+	s, err = server.OpenHistoryStore(dbPath)
 	if err != nil {
 		t.Fatal(err)
 	}

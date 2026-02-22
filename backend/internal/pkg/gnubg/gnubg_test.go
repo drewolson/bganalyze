@@ -7,7 +7,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"bganalyze/gnubg"
+	"bganalyze/backend/internal/pkg/gnubg"
 )
 
 func TestAnalyze(t *testing.T) {
@@ -15,7 +15,7 @@ func TestAnalyze(t *testing.T) {
 		t.Skip("gnubg not in PATH, skipping integration test")
 	}
 
-	matPath := filepath.Join("..", "testdata", "heroes.mat")
+	matPath := filepath.Join("..", "..", "..", "..", "testdata", "heroes.mat")
 	if _, err := os.Stat(matPath); err != nil {
 		t.Fatalf("test data missing: %v", err)
 	}

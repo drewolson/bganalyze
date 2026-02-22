@@ -15,8 +15,10 @@ import (
 	"testing/fstest"
 	"time"
 
-	"bganalyze/server"
+	"bganalyze/backend/internal/app/server"
 )
+
+const fixtureDir = "../../../../testdata/heroes-analysis"
 
 var fakeFS = fstest.MapFS{
 	"index.html": &fstest.MapFile{
@@ -149,7 +151,6 @@ func TestMatchStatusNotFound(t *testing.T) {
 }
 
 func TestAnalysisReturnsJSON(t *testing.T) {
-	fixtureDir := "../testdata/heroes-analysis"
 	baseDir := t.TempDir()
 
 	// Analyze func copies test fixtures into the match directory
@@ -330,7 +331,10 @@ func TestHistoryDeleteOne(t *testing.T) {
 		t.Fatalf("DELETE expected 204, got %d", delResp.StatusCode)
 	}
 
-	r, _ := http.Get(srv.URL + "/api/history")
+	r, err := http.Get(srv.URL + "/api/history")
+	if err != nil {
+		t.Fatal(err)
+	}
 	defer r.Body.Close()
 	var entries []server.HistoryEntry
 	json.NewDecoder(r.Body).Decode(&entries)
@@ -361,7 +365,10 @@ func TestHistoryClearAll(t *testing.T) {
 		t.Fatalf("DELETE all expected 204, got %d", delResp.StatusCode)
 	}
 
-	r, _ := http.Get(srv.URL + "/api/history")
+	r, err := http.Get(srv.URL + "/api/history")
+	if err != nil {
+		t.Fatal(err)
+	}
 	defer r.Body.Close()
 	var entries []server.HistoryEntry
 	json.NewDecoder(r.Body).Decode(&entries)
@@ -435,7 +442,6 @@ func TestReanalyze(t *testing.T) {
 	baseDir := t.TempDir()
 	store := newTestStore(t)
 
-	fixtureDir := "../testdata/heroes-analysis"
 	copyFixtures := func(_ context.Context, _, outPath string, _ int) error {
 		matchDir := filepath.Dir(outPath)
 		entries, err := os.ReadDir(fixtureDir)
@@ -615,7 +621,10 @@ func TestHistoryPatchFlipped(t *testing.T) {
 		t.Fatalf("PATCH expected 204, got %d", patchResp.StatusCode)
 	}
 
-	r, _ := http.Get(srv.URL + "/api/history")
+	r, err := http.Get(srv.URL + "/api/history")
+	if err != nil {
+		t.Fatal(err)
+	}
 	defer r.Body.Close()
 	var entries []server.HistoryEntry
 	json.NewDecoder(r.Body).Decode(&entries)

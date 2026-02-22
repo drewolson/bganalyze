@@ -2,7 +2,6 @@ package main
 
 import (
 	"context"
-	"embed"
 	"flag"
 	"fmt"
 	"io/fs"
@@ -11,12 +10,10 @@ import (
 	"os"
 	"path/filepath"
 
-	"bganalyze/gnubg"
-	"bganalyze/server"
+	"bganalyze"
+	"bganalyze/backend/internal/app/server"
+	"bganalyze/backend/internal/pkg/gnubg"
 )
-
-//go:embed frontend/dist/*
-var frontendFiles embed.FS
 
 func main() {
 	port := flag.Int("port", 8080, "port to listen on")
@@ -24,7 +21,7 @@ func main() {
 	dataDir := flag.String("datadir", "", "directory for persistent data (default OS config dir)")
 	flag.Parse()
 
-	frontendFS, err := fs.Sub(frontendFiles, "frontend/dist")
+	frontendFS, err := fs.Sub(bganalyze.FrontendFiles, "frontend/dist")
 	if err != nil {
 		log.Fatal(err)
 	}
