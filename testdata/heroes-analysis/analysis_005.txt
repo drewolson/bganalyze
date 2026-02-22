@@ -1,0 +1,2000 @@
+The score (after 4 games) is: rchoice 4, A192K 1 (match to 5 points), post-Crawford play
+
+Match Information:
+Date: 02/05/2026
+Event: Online match
+Place: Backgammon Studio
+Comments: [ClockType "Standard 600/10"]
+
+
+Move number 1:  A192K to play 61
+
+ GNU Backgammon  Position ID: 4HPwATDgc/ABMA
+                 Match ID   : cAinAEAACAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: rchoice
+ | X           O    |   | O              X |     4 points
+ | X           O    |   | O              X |     
+ | X           O    |   | O                |     
+ | X                |   | O                |     
+ | X                |   | O                |    
+v|                  |BAR|                  |     5 points match (Cube: 1)
+ | O                |   | X                |    
+ | O                |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    |   | X              O |     Rolled 61
+ | O           X    |   | X              O |     1 point
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: A192K
+Pip counts: O 167, X 167
+
+* A192K moves 13/7 8/7
+
+Rolled 61 (-0.012):
+*    1. Cubeful 0-ply    13/7 8/7                     Eq.: +0.825
+       0.533 0.154 0.010 - 0.467 0.132 0.006
+     2. Cubeful 0-ply    24/23 24/18                  Eq.: +0.698 (-0.128)
+       0.495 0.121 0.005 - 0.505 0.143 0.004
+     3. Cubeful 0-ply    13/6                         Eq.: +0.689 (-0.136)
+       0.477 0.137 0.009 - 0.523 0.151 0.007
+     4. Cubeful 0-ply    24/23 13/7                   Eq.: +0.685 (-0.141)
+       0.483 0.129 0.007 - 0.517 0.142 0.007
+     5. Cubeful 0-ply    24/18 6/5                    Eq.: +0.677 (-0.149)
+       0.487 0.122 0.006 - 0.513 0.156 0.008
+
+
+Move number 2:  rchoice to play 22
+
+ GNU Backgammon  Position ID: 4NvgATDgc/ABMA
+                 Match ID   : MAGpAEAACAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: rchoice
+ | X           O    |   | O              X |     4 points
+ | X           O    |   | O              X |     Rolled 22
+ | X           O    |   | O                |     
+ | X                |   | O                |     
+ |                  |   | O                |    
+^|                  |BAR|                  |     5 points match (Cube: 1)
+ | O                |   | X                |    
+ | O                |   | X                |     
+ | O                |   | X                |     
+ | O           X  X |   | X              O |     
+ | O           X  X |   | X              O |     1 point
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: A192K
+Pip counts: O 167, X 160
+
+* rchoice moves 24/22(2) 6/4(2)
+Alert: bad move ( -0.065)
+
+Rolled 22 (+0.233):
+     1. Cubeful 0-ply    24/20(2)                     Eq.: -0.732
+       0.517 0.124 0.004 - 0.483 0.085 0.002
+*    2. Cubeful 0-ply    24/22(2) 6/4(2)              Eq.: -0.797 (-0.065)
+       0.523 0.153 0.007 - 0.477 0.111 0.002
+     3. Cubeful 0-ply    24/22 13/11 6/4(2)           Eq.: -0.871 (-0.139)
+       0.527 0.156 0.010 - 0.473 0.139 0.006
+     4. Cubeful 0-ply    13/11(2) 6/4(2)              Eq.: -0.886 (-0.154)
+       0.526 0.170 0.011 - 0.474 0.143 0.006
+     5. Cubeful 0-ply    24/20 6/4(2)                 Eq.: -0.916 (-0.183)
+       0.511 0.141 0.007 - 0.489 0.138 0.004
+
+
+Move number 3:  A192K on roll, cube decision?
+
+ GNU Backgammon  Position ID: mHPwAQzg2+ABMA
+                 Match ID   : cAmgAEAACAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: rchoice
+ | X           O    |   | O     O        X |     4 points
+ | X           O    |   | O     O        X |     
+ | X           O    |   | O                |     
+ | X                |   |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     5 points match (Cube: 1)
+ | O                |   | X                |    
+ | O                |   | X                |     
+ | O                |   | X                |     
+ | O           X  X |   | X        O       |     On roll
+ | O           X  X |   | X        O       |     1 point
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: A192K
+Pip counts: O 159, X 160
+
+* A192K doubles
+
+
+Cube analysis
+0-ply cubeless equity +0.069 (Money: -0.092)
+  0.477 0.111 0.002 - 0.523 0.153 0.007
+Cubeful equities:
+1. Double, take        +0.797
+2. Double, pass        +1.000  (+0.203)
+3. No double           +0.622  (-0.175)
+Proper cube action: Double, take
+Move number 4:  A192K doubles to 2
+
+ GNU Backgammon  Position ID: mHPwAQzg2+ABMA
+                 Match ID   : cBGgAEAACAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: rchoice
+ | X           O    |   | O     O        X |     4 points
+ | X           O    |   | O     O        X |     Cube offered at 2
+ | X           O    |   | O                |     
+ | X                |   |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     
+ | O                |   | X                |    
+ | O                |   | X                |     
+ | O                |   | X                |     
+ | O           X  X |   | X        O       |     
+ | O           X  X |   | X        O       |     1 point
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: A192K
+Pip counts: O 159, X 160
+
+* rchoice accepts
+
+
+Cube analysis
+0-ply cubeless equity -0.069 (Money: +0.092)
+  0.523 0.153 0.007 - 0.477 0.111 0.002
+Cubeful equities:
+1. Double, take        -0.797
+2. Double, pass        -1.000  (-0.203)
+3. No double           -0.622  (+0.175)
+Proper cube action: Double, take
+Move number 5:  A192K to play 22
+
+ GNU Backgammon  Position ID: mHPwAQzg2+ABMA
+                 Match ID   : QQmpAEAACAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: rchoice (Cube: 2)
+ | X           O    |   | O     O        X |     4 points
+ | X           O    |   | O     O        X |     
+ | X           O    |   | O                |     
+ | X                |   |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     5 points match
+ | O                |   | X                |    
+ | O                |   | X                |     
+ | O                |   | X                |     
+ | O           X  X |   | X        O       |     Rolled 22
+ | O           X  X |   | X        O       |     1 point
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: A192K
+Pip counts: O 159, X 160
+
+* A192K moves 24/22(2) 6/4(2)
+
+Rolled 22 (+0.148):
+     1. Cubeful 0-ply    24/22 13/11 6/4(2)           Eq.: +0.317
+       0.527 0.125 0.003 - 0.473 0.124 0.005
+*    2. Cubeful 0-ply    24/22(2) 6/4(2)              Eq.: +0.303 (-0.014)
+       0.532 0.114 0.002 - 0.468 0.101 0.002
+     3. Cubeful 0-ply    24/20(2)                     Eq.: +0.295 (-0.021)
+       0.547 0.096 0.001 - 0.453 0.069 0.001
+     4. Cubeful 0-ply    24/20 6/4(2)                 Eq.: +0.285 (-0.032)
+       0.520 0.116 0.002 - 0.480 0.122 0.004
+     5. Cubeful 0-ply    13/11(2) 6/4(2)              Eq.: +0.278 (-0.039)
+       0.508 0.125 0.004 - 0.492 0.141 0.007
+
+
+Move number 6:  rchoice to play 54
+
+ GNU Backgammon  Position ID: mNvgAQyYc/ABDA
+                 Match ID   : AYGyAEAACAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: rchoice (Cube: 2)
+ | X           O    |   | O     O  X       |     4 points
+ | X           O    |   | O     O  X       |     Rolled 54
+ | X           O    |   | O                |     
+ | X                |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     5 points match
+ | O                |   |                  |    
+ | O                |   |                  |     
+ | O                |   | X                |     
+ | O           X  X |   | X     X  O       |     
+ | O           X  X |   | X     X  O       |     1 point
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: A192K
+Pip counts: O 159, X 152
+
+* rchoice moves 13/4
+
+Rolled 54 (-0.060):
+*    1. Cubeful 0-ply    13/4                         Eq.: -0.395
+       0.429 0.091 0.002 - 0.571 0.121 0.002
+     2. Cubeful 0-ply    13/9 13/8                    Eq.: -0.403 (-0.009)
+       0.427 0.093 0.002 - 0.573 0.123 0.004
+     3. Cubeful 0-ply    13/8 6/2                     Eq.: -0.440 (-0.045)
+       0.416 0.086 0.002 - 0.584 0.130 0.003
+     4. Cubeful 0-ply    13/9 6/1                     Eq.: -0.519 (-0.124)
+       0.394 0.088 0.002 - 0.606 0.146 0.006
+     5. Cubeful 0-ply    8/4 6/1                      Eq.: -0.545 (-0.150)
+       0.384 0.083 0.001 - 0.616 0.149 0.004
+
+
+Move number 7:  A192K to play 32
+
+ GNU Backgammon  Position ID: OOfgAQyY2+ABDA
+                 Match ID   : QYmpAEAACAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: rchoice (Cube: 2)
+ | X           O    |   | O     O  X       |     4 points
+ | X           O    |   | O     O  X       |     
+ | X           O    |   | O     O          |     
+ | X                |   |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     5 points match
+ |                  |   |                  |    
+ | O                |   |                  |     
+ | O                |   | X                |     
+ | O           X  X |   | X     X  O       |     Rolled 32
+ | O           X  X |   | X     X  O       |     1 point
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: A192K
+Pip counts: O 150, X 152
+
+* A192K moves 13/8
+
+Rolled 32 (-0.001):
+     1. Cubeful 0-ply    13/11 13/10                  Eq.: +0.369
+       0.554 0.124 0.003 - 0.446 0.103 0.004
+*    2. Cubeful 0-ply    13/8                         Eq.: +0.342 (-0.027)
+       0.546 0.119 0.002 - 0.454 0.099 0.002
+     3. Cubeful 0-ply    22/20 13/10                  Eq.: +0.299 (-0.070)
+       0.523 0.120 0.003 - 0.477 0.151 0.007
+     4. Cubeful 0-ply    13/10 6/4                    Eq.: +0.284 (-0.085)
+       0.522 0.114 0.002 - 0.478 0.106 0.003
+     5. Cubeful 0-ply    8/5 7/5                      Eq.: +0.253 (-0.116)
+       0.495 0.125 0.003 - 0.505 0.117 0.005
+
+
+Move number 8:  rchoice to play 61
+
+ GNU Backgammon  Position ID: mNvBAQw45+ABDA
+                 Match ID   : AQGnAEAACAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: rchoice (Cube: 2)
+ | X           O    |   | O     O  X       |     4 points
+ | X           O    |   | O     O  X       |     Rolled 61
+ | X           O    |   | O     O          |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     5 points match
+ |                  |   |                  |    
+ | O                |   |                  |     
+ | O           X    |   | X                |     
+ | O           X  X |   | X     X  O       |     
+ | O           X  X |   | X     X  O       |     1 point
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: A192K
+Pip counts: O 150, X 147
+
+* rchoice moves 13/7 8/7
+
+Rolled 61 (+0.052):
+*    1. Cubeful 0-ply    13/7 8/7                     Eq.: -0.318
+       0.463 0.102 0.002 - 0.537 0.117 0.002
+     2. Cubeful 0-ply    13/6                         Eq.: -0.403 (-0.085)
+       0.425 0.095 0.002 - 0.575 0.121 0.002
+     3. Cubeful 0-ply    8/1                          Eq.: -0.486 (-0.168)
+       0.400 0.089 0.001 - 0.600 0.136 0.003
+     4. Cubeful 0-ply    13/7 6/5                     Eq.: -0.518 (-0.199)
+       0.399 0.090 0.002 - 0.601 0.150 0.007
+     5. Cubeful 0-ply    8/2 6/5                      Eq.: -0.528 (-0.209)
+       0.388 0.089 0.002 - 0.612 0.145 0.006
+
+
+Move number 9:  A192K to play 63
+
+ GNU Backgammon  Position ID: OLfBAQyY28EBDA
+                 Match ID   : QQmvAEAACAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: rchoice (Cube: 2)
+ | X           O  O |   | O     O  X       |     4 points
+ | X           O  O |   | O     O  X       |     
+ | X                |   | O     O          |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     5 points match
+ |                  |   |                  |    
+ |                  |   |                  |     
+ | O           X    |   | X                |     
+ | O           X  X |   | X     X  O       |     Rolled 63
+ | O           X  X |   | X     X  O       |     1 point
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: A192K
+Pip counts: O 143, X 147
+
+* A192K moves 22/13
+
+Rolled 63 (-0.016):
+*    1. Cubeful 0-ply    22/13                        Eq.: +0.279
+       0.532 0.102 0.002 - 0.468 0.143 0.003
+     2. Cubeful 0-ply    13/7 8/5                     Eq.: +0.264 (-0.016)
+       0.505 0.121 0.003 - 0.495 0.110 0.004
+     3. Cubeful 0-ply    22/16 13/10                  Eq.: +0.221 (-0.058)
+       0.494 0.111 0.002 - 0.506 0.196 0.009
+     4. Cubeful 0-ply    13/4                         Eq.: +0.217 (-0.063)
+       0.492 0.111 0.002 - 0.508 0.109 0.002
+     5. Cubeful 0-ply    13/10 8/2                    Eq.: +0.213 (-0.066)
+       0.488 0.113 0.002 - 0.512 0.115 0.004
+
+
+Move number 10:  rchoice to play 31
+
+ GNU Backgammon  Position ID: mNvBAwg4t8EBDA
+                 Match ID   : AYGlAEAACAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: rchoice (Cube: 2)
+ | X           O  O |   | O     O  X       |     4 points
+ | X           O  O |   | O     O          |     Rolled 31
+ | X                |   | O     O          |     
+ | X                |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     5 points match
+ |                  |   |                  |    
+ |                  |   |                  |     
+ | O           X    |   | X                |     
+ | O           X  X |   | X     X  O       |     
+ | O           X  X |   | X     X  O       |     1 point
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: A192K
+Pip counts: O 143, X 138
+
+* rchoice moves 6/3* 4/3
+
+Rolled 31 (+0.100):
+*    1. Cubeful 0-ply    6/3* 4/3                     Eq.: -0.169
+       0.513 0.156 0.003 - 0.487 0.093 0.002
+     2. Cubeful 0-ply    8/5 6/5                      Eq.: -0.355 (-0.187)
+       0.417 0.106 0.002 - 0.583 0.090 0.002
+     3. Cubeful 0-ply    13/10 4/3*                   Eq.: -0.374 (-0.206)
+       0.443 0.123 0.004 - 0.557 0.124 0.005
+     4. Cubeful 0-ply    13/9                         Eq.: -0.426 (-0.258)
+       0.395 0.096 0.002 - 0.605 0.104 0.003
+     5. Cubeful 0-ply    6/2                          Eq.: -0.441 (-0.272)
+       0.384 0.085 0.002 - 0.616 0.100 0.002
+
+
+Move number 11:  A192K to play 66
+
+ GNU Backgammon  Position ID: bLbBAQyY28EDQA
+                 Match ID   : QQm7AEAACAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: rchoice (Cube: 2)
+ | X           O  O |   | O     O  O       |     4 points
+ | X           O  O |   | O     O  O       |     
+ | X                |   |                  |     
+ | X                |   |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     5 points match
+ |                  |   |                  |    
+ |                  |   |                  |     
+ | O           X    |   | X                |     
+ | O           X  X |   | X     X  O       |     Rolled 66
+ | O           X  X | X | X     X  O       |     1 point
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: A192K
+Pip counts: O 139, X 141
+
+* A192K cannot move
+
+Rolled 66 (-0.138):
+*    Cannot move
+
+
+Move number 12:  rchoice to play 32
+
+ GNU Backgammon  Position ID: mNvBA0BstsEBDA
+                 Match ID   : AYGpAEAACAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: rchoice (Cube: 2)
+ | X           O  O |   | O     O  O       |     4 points
+ | X           O  O |   | O     O  O       |     Rolled 32
+ | X                |   |                  |     
+ | X                |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     5 points match
+ |                  |   |                  |    
+ |                  |   |                  |     
+ | O           X    |   | X                |     
+ | O           X  X |   | X     X  O       |     
+ | O           X  X | X | X     X  O       |     1 point
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: A192K
+Pip counts: O 139, X 141
+
+* rchoice moves 22/20 13/10
+Alert: very bad move ( -0.124)
+
+Rolled 32 (+0.059):
+     1. Cubeful 0-ply    8/5 7/5                      Eq.: +0.039
+       0.605 0.255 0.005 - 0.395 0.082 0.003
+*    2. Cubeful 0-ply    22/20 13/10                  Eq.: -0.085 (-0.124)
+       0.568 0.192 0.004 - 0.432 0.106 0.004
+     3. Cubeful 0-ply    13/11 13/10                  Eq.: -0.124 (-0.163)
+       0.537 0.181 0.004 - 0.463 0.095 0.003
+     4. Cubeful 0-ply    13/8                         Eq.: -0.131 (-0.170)
+       0.527 0.169 0.004 - 0.473 0.088 0.001
+     5. Cubeful 0-ply    13/10 8/6                    Eq.: -0.164 (-0.203)
+       0.517 0.182 0.004 - 0.483 0.094 0.003
+
+
+Move number 13:  A192K to play 52
+
+ GNU Backgammon  Position ID: bLaJAQmY28EDQA
+                 Match ID   : QYmqAEAACAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: rchoice (Cube: 2)
+ | X     O     O  O |   | O     O  O       |     4 points
+ | X           O  O |   | O     O  O       |     
+ | X                |   |                  |     
+ | X                |   |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     5 points match
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |             X    |   | X                |     
+ | O           X  X |   | X     X          |     Rolled 52
+ | O           X  X | X | X  O  X  O       |     1 point
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: A192K
+Pip counts: O 134, X 141
+
+* A192K moves bar/20 6/4
+Alert: bad move ( -0.092)
+
+Rolled 52 (-0.033):
+     1. Cubeful 0-ply    bar/23 8/3*                  Eq.: +0.071
+       0.417 0.113 0.005 - 0.583 0.216 0.008
+     2. Cubeful 0-ply    bar/20 7/5*                  Eq.: +0.067 (-0.003)
+       0.413 0.115 0.005 - 0.587 0.275 0.018
+     3. Cubeful 0-ply    bar/20 8/6                   Eq.: +0.039 (-0.032)
+       0.417 0.097 0.002 - 0.583 0.215 0.004
+     4. Cubeful 0-ply    bar/23 13/8                  Eq.: +0.019 (-0.052)
+       0.412 0.093 0.003 - 0.588 0.174 0.003
+*    5. Cubeful 0-ply    bar/20 6/4                   Eq.: -0.021 (-0.092)
+       0.400 0.086 0.002 - 0.600 0.227 0.004
+
+
+Move number 14:  rchoice to play 21
+
+ GNU Backgammon  Position ID: ONvBAwJstokBCQ
+                 Match ID   : AQGlAEAACAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: rchoice (Cube: 2)
+ | X     O     O  O |   | O  X  O  O       |     4 points
+ | X           O  O |   | O     O  O       |     Rolled 21
+ | X                |   |                  |     
+ | X                |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     5 points match
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |             X    |   |       X          |     
+ | O           X  X |   | X     X          |     
+ | O           X  X |   | X  O  X  O       |     1 point
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: A192K
+Pip counts: O 134, X 134
+
+* rchoice moves 22/20 10/9
+
+Rolled 21 (-0.160):
+*    1. Cubeful 0-ply    22/20 10/9                   Eq.: -0.130
+       0.485 0.096 0.002 - 0.515 0.048 0.001
+     2. Cubeful 0-ply    7/5*/4                       Eq.: -0.187 (-0.057)
+       0.537 0.201 0.004 - 0.463 0.125 0.008
+     3. Cubeful 0-ply    7/6 7/5*                     Eq.: -0.247 (-0.117)
+       0.526 0.212 0.005 - 0.474 0.142 0.010
+     4. Cubeful 0-ply    22/20 8/7                    Eq.: -0.259 (-0.128)
+       0.432 0.084 0.002 - 0.568 0.059 0.002
+     5. Cubeful 0-ply    22/20 3/2                    Eq.: -0.262 (-0.132)
+       0.431 0.077 0.002 - 0.569 0.060 0.002
+
+
+Move number 15:  A192K to play 44
+
+ GNU Backgammon  Position ID: bLaFAQM428EDAg
+                 Match ID   : QQmyAEAACAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: rchoice (Cube: 2)
+ | X        O  O  O |   | O  X  O  O       |     4 points
+ | X           O  O |   | O     O  O       |     
+ | X                |   |                  |     
+ | X                |   |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     5 points match
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |             X    |   |       X          |     
+ | O           X  X |   | X  O  X          |     Rolled 44
+ | O           X  X |   | X  O  X          |     1 point
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: A192K
+Pip counts: O 131, X 134
+
+* A192K moves 20/16* 13/9(2) 8/4
+Alert: lucky roll! ( +0.384)
+
+Rolled 44 (+0.384):
+*    1. Cubeful 0-ply    20/16* 13/9(2) 8/4           Eq.: +0.511
+       0.661 0.090 0.002 - 0.339 0.068 0.001
+     2. Cubeful 0-ply    20/16* 13/9(3)               Eq.: +0.423 (-0.088)
+       0.626 0.082 0.002 - 0.374 0.080 0.003
+     3. Cubeful 0-ply    20/16* 8/4 7/3(2)            Eq.: +0.406 (-0.104)
+       0.601 0.098 0.002 - 0.399 0.089 0.001
+     4. Cubeful 0-ply    20/16* 13/9 7/3(2)           Eq.: +0.398 (-0.113)
+       0.607 0.088 0.002 - 0.393 0.088 0.001
+     5. Cubeful 0-ply    20/16* 8/4 6/2(2)            Eq.: +0.199 (-0.311)
+       0.527 0.069 0.001 - 0.473 0.124 0.002
+
+
+Move number 16:  rchoice to play 64
+
+ GNU Backgammon  Position ID: eLYNIwBstsGAQQ
+                 Match ID   : AQGzAEAACAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: rchoice (Cube: 2)
+ | X        X  O  O | O | O     O  O       |     4 points
+ | X           O  O |   | O     O  O       |     Rolled 64
+ |                  |   |                  |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     5 points match
+ |                  |   |                  |    
+ |                  |   |       X          |     
+ |                  |   |       X          |     
+ | O        X  X  X |   | X  O  X          |     
+ | O        X  X  X |   | X  O  X          |     1 point
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: A192K
+Pip counts: O 147, X 118
+
+* rchoice cannot move
+
+Rolled 64 (-0.175):
+*    Cannot move
+
+
+Move number 17:  A192K to play 42
+
+ GNU Backgammon  Position ID: bLbBgEF4tg0jAA
+                 Match ID   : QQmqAEAACAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: rchoice (Cube: 2)
+ | X        X  O  O | O | O     O  O       |     4 points
+ | X           O  O |   | O     O  O       |     
+ |                  |   |                  |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     5 points match
+ |                  |   |                  |    
+ |                  |   |       X          |     
+ |                  |   |       X          |     
+ | O        X  X  X |   | X  O  X          |     Rolled 42
+ | O        X  X  X |   | X  O  X          |     1 point
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: A192K
+Pip counts: O 147, X 118
+
+* A192K moves 16/10
+
+Rolled 42 (-0.070):
+*    1. Cubeful 0-ply    16/10                        Eq.: +0.598
+       0.699 0.096 0.002 - 0.301 0.056 0.001
+     2. Cubeful 0-ply    16/14 13/9                   Eq.: +0.524 (-0.074)
+       0.660 0.097 0.002 - 0.340 0.069 0.002
+     3. Cubeful 0-ply    13/7                         Eq.: +0.454 (-0.145)
+       0.619 0.103 0.003 - 0.381 0.088 0.003
+     4. Cubeful 0-ply    13/11 13/9                   Eq.: +0.442 (-0.156)
+       0.615 0.101 0.003 - 0.385 0.088 0.004
+     5. Cubeful 0-ply    8/6 8/4                      Eq.: +0.422 (-0.176)
+       0.606 0.101 0.003 - 0.394 0.084 0.002
+
+
+Move number 18:  rchoice to play 11
+
+ GNU Backgammon  Position ID: eLYtBgBstsGAQQ
+                 Match ID   : AYGkAEAACAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: rchoice (Cube: 2)
+ | X           O  O | O | O     O  O       |     4 points
+ | X           O  O |   | O     O  O       |     Rolled 11
+ |                  |   |                  |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     5 points match
+ |                  |   |                  |    
+ |                  |   |       X          |     
+ |                  |   |       X          |     
+ | O        X  X  X |   | X  O  X          |     
+ | O     X  X  X  X |   | X  O  X          |     1 point
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: A192K
+Pip counts: O 147, X 112
+
+* rchoice moves bar/23 8/6
+Alert: bad move ( -0.073)
+
+Rolled 11 (-0.064):
+     1. Cubeful 0-ply    bar/24 8/5                   Eq.: -0.658
+       0.279 0.048 0.002 - 0.721 0.103 0.002
+     2. Cubeful 0-ply    bar/24 7/5 7/6               Eq.: -0.669 (-0.011)
+       0.273 0.048 0.002 - 0.727 0.103 0.002
+     3. Cubeful 0-ply    bar/24 7/5 6/5               Eq.: -0.673 (-0.014)
+       0.273 0.044 0.002 - 0.727 0.104 0.002
+     4. Cubeful 0-ply    bar/24 8/7 6/5(2)            Eq.: -0.690 (-0.032)
+       0.257 0.040 0.002 - 0.743 0.098 0.002
+     5. Cubeful 0-ply    bar/24 8/6 8/7               Eq.: -0.691 (-0.032)
+       0.263 0.046 0.002 - 0.737 0.103 0.002
+*   12. Cubeful 0-ply    bar/23 8/6                   Eq.: -0.731 (-0.073)
+       0.243 0.039 0.002 - 0.757 0.103 0.002
+
+
+Move number 19:  A192K to play 31
+
+ GNU Backgammon  Position ID: bG7BgBF4ti0GAA
+                 Match ID   : QYmlAEAACAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: rchoice (Cube: 2)
+ | X           O  O |   | O     O  O       |     4 points
+ | X              O |   | O     O  O       |     
+ |                  |   | O                |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     5 points match
+ |                  |   |                  |    
+ |                  |   |       X          |     
+ |                  |   |       X          |     
+ | O        X  X  X |   | X  O  X          |     Rolled 31
+ | O     X  X  X  X |   | X  O  X     O    |     1 point
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: A192K
+Pip counts: O 143, X 112
+
+* A192K moves 10/6
+
+Rolled 31 (+0.014):
+*    1. Cubeful 0-ply    10/6                         Eq.: +0.689
+       0.751 0.089 0.001 - 0.249 0.034 0.000
+     2. Cubeful 0-ply    10/9 4/1                     Eq.: +0.645 (-0.044)
+       0.741 0.077 0.001 - 0.259 0.035 0.000
+     3. Cubeful 0-ply    10/7 4/3                     Eq.: +0.557 (-0.132)
+       0.676 0.098 0.002 - 0.324 0.070 0.001
+     4. Cubeful 0-ply    13/10 4/3                    Eq.: +0.521 (-0.168)
+       0.662 0.094 0.002 - 0.338 0.074 0.002
+     5. Cubeful 0-ply    9/8 9/6                      Eq.: +0.488 (-0.201)
+       0.640 0.099 0.002 - 0.360 0.077 0.001
+
+
+Move number 20:  rchoice to play 51
+
+ GNU Backgammon  Position ID: eG4bBgBsbsGAEQ
+                 Match ID   : AYGmAEAACAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: rchoice (Cube: 2)
+ | X           O  O |   | O     O  O       |     4 points
+ | X              O |   | O     O  O       |     Rolled 51
+ |                  |   | O                |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     5 points match
+ |                  |   |                  |    
+ |                  |   |       X          |     
+ |                  |   | X     X          |     
+ | O        X  X  X |   | X  O  X          |     
+ | O        X  X  X |   | X  O  X     O    |     1 point
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: A192K
+Pip counts: O 143, X 108
+
+* rchoice moves 8/2
+
+Rolled 51 (-0.055):
+     1. Cubeful 0-ply    7/2 6/5                      Eq.: -0.761
+       0.235 0.035 0.001 - 0.765 0.110 0.003
+     2. Cubeful 0-ply    13/8 6/5                     Eq.: -0.770 (-0.010)
+       0.241 0.035 0.002 - 0.759 0.120 0.003
+*    3. Cubeful 0-ply    8/2                          Eq.: -0.771 (-0.011)
+       0.226 0.033 0.001 - 0.774 0.107 0.002
+     4. Cubeful 0-ply    8/3 6/5                      Eq.: -0.773 (-0.012)
+       0.224 0.032 0.001 - 0.776 0.105 0.002
+     5. Cubeful 0-ply    7/6 7/2                      Eq.: -0.779 (-0.018)
+       0.222 0.031 0.001 - 0.778 0.106 0.002
+
+
+Move number 21:  A192K to play 41
+
+ GNU Backgammon  Position ID: 2tzAgBF4bhsGAA
+                 Match ID   : QQmmAEAACAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: rchoice (Cube: 2)
+ | X              O |   | O     O  O  O    |     4 points
+ | X              O |   | O     O  O       |     
+ |                  |   | O                |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     5 points match
+ |                  |   |                  |    
+ |                  |   |       X          |     
+ |                  |   | X     X          |     
+ | O        X  X  X |   | X  O  X          |     Rolled 41
+ | O        X  X  X |   | X  O  X     O    |     1 point
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: A192K
+Pip counts: O 137, X 108
+
+* A192K moves 13/8
+
+Rolled 41 (-0.144):
+     1. Cubeful 0-ply    8/7 8/4                      Eq.: +0.593
+       0.711 0.081 0.001 - 0.289 0.042 0.000
+     2. Cubeful 0-ply    6/2*/1                       Eq.: +0.585 (-0.008)
+       0.678 0.109 0.003 - 0.322 0.074 0.001
+*    3. Cubeful 0-ply    13/8                         Eq.: +0.571 (-0.022)
+       0.679 0.101 0.003 - 0.321 0.060 0.001
+     4. Cubeful 0-ply    13/9 4/3                     Eq.: +0.539 (-0.053)
+       0.666 0.099 0.003 - 0.334 0.079 0.002
+     5. Cubeful 0-ply    7/3 4/3                      Eq.: +0.507 (-0.086)
+       0.630 0.118 0.003 - 0.370 0.095 0.002
+
+
+Move number 22:  rchoice to play 62
+
+ GNU Backgammon  Position ID: eG43BADa3MCAEQ
+                 Match ID   : AQGrAEAACAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: rchoice (Cube: 2)
+ | X              O |   | O     O  O  O    |     4 points
+ |                O |   | O     O  O       |     Rolled 62
+ |                  |   | O                |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     5 points match
+ |                  |   |                  |    
+ |                  |   |       X          |     
+ |             X    |   | X     X          |     
+ | O        X  X  X |   | X  O  X          |     
+ | O        X  X  X |   | X  O  X     O    |     1 point
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: A192K
+Pip counts: O 137, X 103
+
+* rchoice moves 20/12*
+
+Rolled 62 (-0.018):
+*    1. Cubeful 0-ply    20/12*                       Eq.: -0.626
+       0.428 0.107 0.004 - 0.572 0.229 0.015
+     2. Cubeful 0-ply    13/11 13/7                   Eq.: -0.789 (-0.163)
+       0.196 0.018 0.001 - 0.804 0.086 0.002
+     3. Cubeful 0-ply    7/5 7/1                      Eq.: -0.807 (-0.181)
+       0.204 0.023 0.001 - 0.796 0.102 0.002
+     4. Cubeful 0-ply    13/5                         Eq.: -0.808 (-0.182)
+       0.214 0.024 0.001 - 0.786 0.112 0.003
+     5. Cubeful 0-ply    7/1 4/2                      Eq.: -0.833 (-0.207)
+       0.195 0.021 0.001 - 0.805 0.106 0.002
+
+
+Move number 23:  A192K to play 53
+
+ GNU Backgammon  Position ID: 2tygARF4bjcAQA
+                 Match ID   : QYmuAEAACAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: rchoice (Cube: 2)
+ | O              O |   | O     O  O  O    |     4 points
+ |                O |   | O     O  O       |     
+ |                  |   | O                |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     5 points match
+ |                  |   |                  |    
+ |                  |   |       X          |     
+ |             X    |   | X     X          |     
+ | O        X  X  X |   | X     X          |     Rolled 53
+ | O        X  X  X | X | X  O  X     O    |     1 point
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: A192K
+Pip counts: O 129, X 115
+
+* A192K moves bar/20 8/5*
+
+Rolled 53 (+0.089):
+*    1. Cubeful 0-ply    bar/20 8/5*                  Eq.: +0.681
+       0.608 0.221 0.011 - 0.392 0.133 0.007
+     2. Cubeful 0-ply    bar/20 4/1                   Eq.: +0.471 (-0.210)
+       0.554 0.173 0.006 - 0.446 0.124 0.003
+     3. Cubeful 0-ply    bar/17                       Eq.: +0.423 (-0.258)
+       0.571 0.134 0.006 - 0.429 0.108 0.003
+     4. Cubeful 0-ply    bar/20 6/3                   Eq.: +0.317 (-0.364)
+       0.500 0.151 0.006 - 0.500 0.176 0.006
+     5. Cubeful 0-ply    bar/20 9/6                   Eq.: +0.210 (-0.471)
+       0.452 0.146 0.005 - 0.548 0.188 0.009
+
+
+Move number 24:  rchoice to play 41
+
+ GNU Backgammon  Position ID: eN02AALa3KABSA
+                 Match ID   : AQGmAEAACAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: rchoice (Cube: 2)
+ | O              O | O | O  X  O  O  O    |     4 points
+ |                O |   | O     O  O       |     Rolled 41
+ |                  |   | O                |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     5 points match
+ |                  |   |                  |    
+ |                  |   |       X          |     
+ |                  |   | X     X          |     
+ | O        X  X  X |   | X     X          |     
+ | O        X  X  X |   | X  X  X     O    |     1 point
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: A192K
+Pip counts: O 134, X 107
+
+* rchoice moves bar/20*
+
+Rolled 41 (+0.132):
+*    1. Cubeful 0-ply    bar/20*                      Eq.: -0.487
+       0.474 0.153 0.008 - 0.526 0.208 0.014
+     2. Cubeful 0-ply    bar/24 6/2                   Eq.: -0.931 (-0.444)
+       0.305 0.070 0.002 - 0.695 0.257 0.012
+     3. Cubeful 0-ply    bar/24 12/8                  Eq.: -1.124 (-0.638)
+       0.272 0.061 0.002 - 0.728 0.319 0.019
+     4. Cubeful 0-ply    bar/24 13/9                  Eq.: -1.239 (-0.752)
+       0.263 0.057 0.003 - 0.737 0.364 0.044
+     5. Cubeful 0-ply    bar/24 7/3                   Eq.: -1.299 (-0.813)
+       0.246 0.054 0.002 - 0.754 0.377 0.031
+
+
+Move number 25:  A192K to play 11
+
+ GNU Backgammon  Position ID: 2tygARF4bhsAQQ
+                 Match ID   : QYmkAEAACAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: rchoice (Cube: 2)
+ | O              O |   | O  X  O  O  O    |     4 points
+ |                O |   | O     O  O       |     
+ |                  |   | O                |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     5 points match
+ |                  |   |                  |    
+ |                  |   |       X          |     
+ |                  |   | X     X          |     
+ | O        X  X  X |   | X     X          |     Rolled 11
+ | O        X  X  X | X | X  O  X     O    |     1 point
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: A192K
+Pip counts: O 129, X 127
+
+* A192K moves bar/23* 6/5*/4
+Alert: bad move ( -0.087)
+Alert: lucky roll! ( +0.421)
+
+Rolled 11 (+0.421):
+     1. Cubeful 0-ply    bar/23* 4/3(2)               Eq.: +0.869
+       0.641 0.280 0.017 - 0.359 0.090 0.003
+     2. Cubeful 0-ply    bar/24 7/5* 6/5              Eq.: +0.829 (-0.040)
+       0.605 0.295 0.021 - 0.395 0.150 0.012
+     3. Cubeful 0-ply    bar/23* 4/2*                 Eq.: +0.808 (-0.061)
+       0.613 0.277 0.020 - 0.387 0.118 0.008
+*    4. Cubeful 0-ply    bar/23* 6/5*/4               Eq.: +0.783 (-0.087)
+       0.599 0.279 0.022 - 0.401 0.107 0.004
+     5. Cubeful 0-ply    bar/24 6/5* 4/3(2)           Eq.: +0.779 (-0.090)
+       0.610 0.266 0.022 - 0.390 0.159 0.011
+
+
+Move number 26:  rchoice to play 43
+
+ GNU Backgammon  Position ID: +GwbABFsbtAAZA
+                 Match ID   : AQGuAEAACAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: rchoice (Cube: 2)
+ | O              O | O | O  X  O  O  X    |     4 points
+ |                O | O | O     O  O       |     Rolled 43
+ |                  |   | O                |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     5 points match
+ |                  |   |       X          |    
+ |                  |   |       X          |     
+ |                  |   |       X          |     
+ | O        X  X  X |   | X     X          |     
+ | O        X  X  X |   | X     X     O    |     1 point
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: A192K
+Pip counts: O 157, X 123
+
+* rchoice moves bar/22
+
+Rolled 43 (-0.235):
+*    1. Cubeful 0-ply    bar/22                       Eq.: -1.016
+       0.370 0.094 0.007 - 0.630 0.361 0.028
+
+
+Move number 27:  A192K to play 62
+
+ GNU Backgammon  Position ID: bG7QAEr4bBsAEQ
+                 Match ID   : QQmrAEAACAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: rchoice (Cube: 2)
+ | O              O | O | O  X  O  O  X    |     4 points
+ |                O |   | O     O  O       |     
+ |                  |   | O                |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     5 points match
+ |                  |   |       X          |    
+ |                  |   |       X          |     
+ |                  |   |       X          |     
+ | O        X  X  X |   | X     X          |     Rolled 62
+ | O        X  X  X |   | X     X  O  O    |     1 point
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: A192K
+Pip counts: O 154, X 123
+
+* A192K moves 8/2* 4/2
+
+Rolled 62 (+0.053):
+*    1. Cubeful 0-ply    8/2* 4/2                     Eq.: +1.171
+       0.661 0.405 0.033 - 0.339 0.089 0.004
+     2. Cubeful 0-ply    23/17 4/2*                   Eq.: +0.911 (-0.260)
+       0.637 0.304 0.023 - 0.363 0.111 0.007
+     3. Cubeful 0-ply    9/3* 4/2*                    Eq.: +0.839 (-0.332)
+       0.589 0.315 0.025 - 0.411 0.146 0.015
+     4. Cubeful 0-ply    20/14 4/2*                   Eq.: +0.819 (-0.352)
+       0.611 0.285 0.021 - 0.389 0.118 0.008
+     5. Cubeful 0-ply    23/15                        Eq.: +0.658 (-0.513)
+       0.594 0.224 0.014 - 0.406 0.112 0.005
+
+
+Move number 28:  rchoice to play 21
+
+ GNU Backgammon  Position ID: 5tkaABFsbtAAYg
+                 Match ID   : AQGlAEAACAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: rchoice (Cube: 2)
+ | O              O | O | O  X  O  O  X    |     4 points
+ |                O | O | O     O  O       |     Rolled 21
+ |                  |   | O                |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     5 points match
+ |                  |   |                  |    
+ |                  |   |       X          |     
+ |                  |   |       X          |     
+ | O        X     X |   | X     X     X    |     
+ | O        X  X  X |   | X     X  O  X    |     1 point
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: A192K
+Pip counts: O 156, X 115
+
+* rchoice moves bar/24
+
+Rolled 21 (-0.266):
+*    1. Cubeful 0-ply    bar/24                       Eq.: -1.454
+       0.302 0.078 0.007 - 0.698 0.504 0.048
+
+
+Move number 29:  A192K to play 33
+
+ GNU Backgammon  Position ID: bG7QAFLm2RoAEQ
+                 Match ID   : QYmtAEAACAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: rchoice (Cube: 2)
+ | O              O | O | O  X  O  O  X    |     4 points
+ |                O |   | O     O  O       |     
+ |                  |   | O                |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     5 points match
+ |                  |   |                  |    
+ |                  |   |       X          |     
+ |                  |   |       X          |     
+ | O        X     X |   | X     X     X    |     Rolled 33
+ | O        X  X  X |   | X     X  O  X  O |     1 point
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: A192K
+Pip counts: O 155, X 115
+
+* A192K moves 9/3*(2)
+Alert: very bad move ( -0.598)
+Alert: very lucky roll! ( +0.647)
+
+Rolled 33 (+0.647):
+     1. Cubeful 0-ply    6/3*(2) 4/1*(2)              Eq.: +2.191
+       0.834 0.726 0.061 - 0.166 0.043 0.002
+     2. Cubeful 0-ply    9/3* 4/1*(2)                 Eq.: +2.014 (-0.178)
+       0.796 0.677 0.058 - 0.204 0.061 0.004
+     3. Cubeful 0-ply    23/20 9/6 4/1*(2)            Eq.: +1.869 (-0.323)
+       0.793 0.611 0.045 - 0.207 0.047 0.002
+     4. Cubeful 0-ply    20/17 9/6 4/1*(2)            Eq.: +1.837 (-0.354)
+       0.777 0.612 0.060 - 0.223 0.060 0.004
+     5. Cubeful 0-ply    23/17 4/1*(2)                Eq.: +1.819 (-0.372)
+       0.791 0.589 0.054 - 0.209 0.048 0.002
+*   11. Cubeful 0-ply    9/3*(2)                      Eq.: +1.593 (-0.598)
+       0.736 0.534 0.063 - 0.264 0.057 0.002
+
+
+Move number 30:  rchoice to play 64
+
+ GNU Backgammon  Position ID: tmcLABFsbtAAaA
+                 Match ID   : AQGzAEAACAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: rchoice (Cube: 2)
+ | O              O | O | O  X  O  O  X    |     4 points
+ |                O | O | O     O  O       |     Rolled 64
+ |                  |   | O                |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     5 points match
+ |                  |   |                  |    
+ |                  |   |       X          |     
+ |                  |   |       X          |     
+ | O              X |   | X     X  X  X    |     
+ | O           X  X |   | X     X  X  X  O |     1 point
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: A192K
+Pip counts: O 158, X 103
+
+* rchoice cannot move
+Alert: unlucky roll! ( -0.487)
+
+Rolled 64 (-0.487):
+*    Cannot move
+
+
+Move number 31:  A192K to play 41
+
+ GNU Backgammon  Position ID: bG7QAGi2ZwsAEQ
+                 Match ID   : QQmmAEAACAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: rchoice (Cube: 2)
+ | O              O | O | O  X  O  O  X    |     4 points
+ |                O | O | O     O  O       |     
+ |                  |   | O                |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     5 points match
+ |                  |   |                  |    
+ |                  |   |       X          |     
+ |                  |   |       X          |     
+ | O              X |   | X     X  X  X    |     Rolled 41
+ | O           X  X |   | X     X  X  X  O |     1 point
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: A192K
+Pip counts: O 158, X 103
+
+* A192K moves 20/16 4/3
+
+Rolled 41 (-0.297):
+     1. Cubeful 0-ply    20/16 7/6                    Eq.: +1.737
+       0.751 0.589 0.078 - 0.249 0.055 0.003
+*    2. Cubeful 0-ply    20/16 4/3                    Eq.: +1.730 (-0.007)
+       0.757 0.580 0.073 - 0.243 0.051 0.002
+     3. Cubeful 0-ply    20/15                        Eq.: +1.703 (-0.034)
+       0.755 0.568 0.071 - 0.245 0.048 0.001
+     4. Cubeful 0-ply    20/16 8/7                    Eq.: +1.629 (-0.108)
+       0.745 0.542 0.063 - 0.255 0.047 0.001
+     5. Cubeful 0-ply    7/6 7/3                      Eq.: +1.548 (-0.188)
+       0.712 0.536 0.058 - 0.288 0.059 0.002
+
+
+Move number 32:  rchoice to play 66
+
+ GNU Backgammon  Position ID: dmcLEBBsbtAAaA
+                 Match ID   : AQG7AEAACAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: rchoice (Cube: 2)
+ | O        X     O | O | O     O  O  X    |     4 points
+ |                O | O | O     O  O       |     Rolled 66
+ |                  |   | O                |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     5 points match
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |                  |   |       X  X       |     
+ | O              X |   | X     X  X  X    |     
+ | O           X  X |   | X     X  X  X  O |     1 point
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: A192K
+Pip counts: O 158, X 98
+
+* rchoice cannot move
+Alert: unlucky roll! ( -0.484)
+
+Rolled 66 (-0.484):
+*    Cannot move
+
+
+Move number 33:  A192K to play 66
+
+ GNU Backgammon  Position ID: bG7QAGh2ZwsQEA
+                 Match ID   : QQm7AEAACAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: rchoice (Cube: 2)
+ | O        X     O | O | O     O  O  X    |     4 points
+ |                O | O | O     O  O       |     
+ |                  |   | O                |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     5 points match
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |                  |   |       X  X       |     
+ | O              X |   | X     X  X  X    |     Rolled 66
+ | O           X  X |   | X     X  X  X  O |     1 point
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: A192K
+Pip counts: O 158, X 98
+
+* A192K moves 23/11 7/1*(2)
+Alert: lucky roll! ( +0.542)
+
+Rolled 66 (+0.542):
+     1. Cubeful 0-ply    23/17 16/10 7/1*(2)          Eq.: +2.674
+       0.938 0.857 0.065 - 0.062 0.005 0.000
+*    2. Cubeful 0-ply    23/11 7/1*(2)                Eq.: +2.673 (-0.000)
+       0.938 0.856 0.059 - 0.062 0.005 0.000
+     3. Cubeful 0-ply    23/17 8/2 7/1*(2)            Eq.: +2.593 (-0.081)
+       0.925 0.830 0.075 - 0.075 0.006 0.000
+     4. Cubeful 0-ply    16/4 7/1*(2)                 Eq.: +2.389 (-0.285)
+       0.886 0.771 0.027 - 0.114 0.011 0.000
+     5. Cubeful 0-ply    16/10 8/2 7/1*(2)            Eq.: +2.364 (-0.310)
+       0.878 0.766 0.025 - 0.122 0.013 0.001
+
+
+Move number 34:  rchoice to play 65
+
+ GNU Backgammon  Position ID: 252JIABsbtAAcA
+                 Match ID   : AQG3AEAACAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: rchoice (Cube: 2)
+ | O        X     O | O | O     O  O       |     4 points
+ |                O | O | O     O  O       |     Rolled 65
+ |                  | O | O                |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     5 points match
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |                  |   |       X  X       |     
+ | O                |   | X     X  X  X  X |     
+ | O  X        X    |   | X     X  X  X  X |     1 point
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: A192K
+Pip counts: O 159, X 74
+
+* rchoice moves bar/20
+
+Rolled 65 (+0.032):
+*    1. Cubeful 0-ply    bar/20                       Eq.: -2.619
+       0.061 0.003 0.000 - 0.939 0.830 0.049
+
+
+Move number 35:  A192K to play 33
+
+ GNU Backgammon  Position ID: bG7QgGDbnYkgAA
+                 Match ID   : QYmtAEAACAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: rchoice (Cube: 2)
+ | O        X     O | O | O     O  O       |     4 points
+ |                O | O | O     O  O       |     
+ |                  |   | O                |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     5 points match
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |                  |   |       X  X       |     
+ | O                |   | X     X  X  X  X |     Rolled 33
+ | O  X        X    |   | X  O  X  X  X  X |     1 point
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: A192K
+Pip counts: O 154, X 74
+
+* A192K moves 16/13* 11/5*/2
+Alert: bad move ( -0.090)
+
+Rolled 33 (+0.251):
+     1. Cubeful 0-ply    16/13* 11/5* 8/5             Eq.: +2.850
+       0.962 0.918 0.202 - 0.038 0.000 0.000
+     2. Cubeful 0-ply    11/5* 8/5 4/1                Eq.: +2.808 (-0.043)
+       0.957 0.903 0.085 - 0.043 0.001 0.000
+     3. Cubeful 0-ply    16/13*/10 8/5*/2             Eq.: +2.771 (-0.080)
+       0.946 0.896 0.136 - 0.054 0.001 0.000
+*    4. Cubeful 0-ply    16/13* 11/5*/2               Eq.: +2.760 (-0.090)
+       0.946 0.890 0.130 - 0.054 0.002 0.000
+     5. Cubeful 0-ply    16/13* 8/5*/2 4/1            Eq.: +2.716 (-0.134)
+       0.935 0.879 0.108 - 0.065 0.003 0.000
+
+
+Move number 36:  rchoice to play 43
+
+ GNU Backgammon  Position ID: uzsTBABsbmAAeA
+                 Match ID   : AQGuAEAACAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: rchoice (Cube: 2)
+ | X              O | O | O     O  O       |     4 points
+ |                O | O | O     O  O       |     Rolled 43
+ |                  | O | O                |     
+ |                  | O |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     5 points match
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |                  |   |       X  X  X    |     
+ | O                |   | X     X  X  X  X |     
+ | O           X    |   | X     X  X  X  X |     1 point
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: A192K
+Pip counts: O 172, X 62
+
+* rchoice cannot move
+
+Rolled 43 (-0.032):
+*    Cannot move
+
+
+Move number 37:  A192K to play 43
+
+ GNU Backgammon  Position ID: bG5gAHi7OxMEAA
+                 Match ID   : QQmuAEAACAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: rchoice (Cube: 2)
+ | X              O | O | O     O  O       |     4 points
+ |                O | O | O     O  O       |     
+ |                  | O | O                |     
+ |                  | O |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     5 points match
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |                  |   |       X  X  X    |     
+ | O                |   | X     X  X  X  X |     Rolled 43
+ | O           X    |   | X     X  X  X  X |     1 point
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: A192K
+Pip counts: O 172, X 62
+
+* A192K moves 13/6
+
+Rolled 43 (+0.011):
+     1. Cubeful 0-ply    13/10 8/4                    Eq.: +2.810
+       0.952 0.908 0.151 - 0.048 0.001 0.000
+*    2. Cubeful 0-ply    13/6                         Eq.: +2.795 (-0.015)
+       0.950 0.903 0.144 - 0.050 0.000 0.000
+     3. Cubeful 0-ply    8/1                          Eq.: +2.778 (-0.032)
+       0.946 0.898 0.124 - 0.054 0.001 0.000
+     4. Cubeful 0-ply    13/9 4/1                     Eq.: +2.775 (-0.035)
+       0.942 0.901 0.120 - 0.058 0.001 0.000
+     5. Cubeful 0-ply    6/3 6/2                      Eq.: +2.717 (-0.092)
+       0.933 0.883 0.112 - 0.067 0.003 0.000
+
+
+Move number 38:  rchoice to play 31
+
+ GNU Backgammon  Position ID: uzsnAABsbmAAeA
+                 Match ID   : AYGlAEAACAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: rchoice (Cube: 2)
+ |                O | O | O     O  O       |     4 points
+ |                O | O | O     O  O       |     Rolled 31
+ |                  | O | O                |     
+ |                  | O |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     5 points match
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |                  |   | X     X  X  X    |     
+ | O                |   | X     X  X  X  X |     
+ | O           X    |   | X     X  X  X  X |     1 point
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: A192K
+Pip counts: O 172, X 55
+
+* rchoice cannot move
+
+Rolled 31 (+0.006):
+*    Cannot move
+
+
+Move number 39:  A192K to play 42
+
+ GNU Backgammon  Position ID: bG5gAHi7OycAAA
+                 Match ID   : QQmqAEAACAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: rchoice (Cube: 2)
+ |                O | O | O     O  O       |     4 points
+ |                O | O | O     O  O       |     
+ |                  | O | O                |     
+ |                  | O |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     5 points match
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |                  |   | X     X  X  X    |     
+ | O                |   | X     X  X  X  X |     Rolled 42
+ | O           X    |   | X     X  X  X  X |     1 point
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: A192K
+Pip counts: O 172, X 55
+
+* A192K moves 8/4 6/4
+
+Rolled 42 (+0.002):
+*    1. Cubeful 0-ply    8/4 6/4                      Eq.: +2.816
+       0.953 0.910 0.161 - 0.047 0.000 0.000
+     2. Cubeful 0-ply    6/2 3/1                      Eq.: +2.778 (-0.038)
+       0.941 0.903 0.132 - 0.059 0.001 0.000
+     3. Cubeful 0-ply    8/4 2/off                    Eq.: +2.775 (-0.041)
+       0.946 0.898 0.180 - 0.054 0.000 0.000
+     4. Cubeful 0-ply    6/2 4/2                      Eq.: +2.774 (-0.042)
+       0.938 0.905 0.130 - 0.062 0.001 0.000
+     5. Cubeful 0-ply    8/2                          Eq.: +2.774 (-0.042)
+       0.941 0.901 0.148 - 0.059 0.000 0.000
+
+
+Move number 40:  rchoice to play 44
+
+ GNU Backgammon  Position ID: u/sMAABsbmAAeA
+                 Match ID   : AQGyAEAACAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: rchoice (Cube: 2)
+ |                O | O | O     O  O       |     4 points
+ |                O | O | O     O  O       |     Rolled 44
+ |                  | O | O                |     
+ |                  | O |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     5 points match
+ |                  |   |       X          |    
+ |                  |   |       X          |     
+ |                  |   |       X  X  X    |     
+ | O                |   | X     X  X  X  X |     
+ | O                |   | X     X  X  X  X |     1 point
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: A192K
+Pip counts: O 172, X 49
+
+* rchoice cannot move
+
+Rolled 44 (+0.014):
+*    Cannot move
+
+
+Move number 41:  A192K to play 53
+
+ GNU Backgammon  Position ID: bG5gAHi7+wwAAA
+                 Match ID   : QYmuAEAACAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: rchoice (Cube: 2)
+ |                O | O | O     O  O       |     4 points
+ |                O | O | O     O  O       |     
+ |                  | O | O                |     
+ |                  | O |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     5 points match
+ |                  |   |       X          |    
+ |                  |   |       X          |     
+ |                  |   |       X  X  X    |     
+ | O                |   | X     X  X  X  X |     Rolled 53
+ | O                |   | X     X  X  X  X |     1 point
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: A192K
+Pip counts: O 172, X 49
+
+* A192K moves 6/3 6/1
+
+Rolled 53 (+0.034):
+*    1. Cubeful 0-ply    6/3 6/1                      Eq.: +2.856
+       0.960 0.922 0.154 - 0.040 0.000 0.000
+     2. Cubeful 0-ply    6/1 4/1                      Eq.: +2.581 (-0.275)
+       0.891 0.857 0.104 - 0.109 0.002 0.000
+     3. Cubeful 0-ply    6/1 3/off                    Eq.: +2.564 (-0.292)
+       0.890 0.850 0.133 - 0.110 0.000 0.000
+
+
+Move number 42:  rchoice to play 63
+
+ GNU Backgammon  Position ID: d+8DAABsbmAAeA
+                 Match ID   : AQGvAEAACAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: rchoice (Cube: 2)
+ |                O | O | O     O  O       |     4 points
+ |                O | O | O     O  O       |     Rolled 63
+ |                  | O | O                |     
+ |                  | O |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     5 points match
+ |                  |   |       X          |    
+ |                  |   |       X  X       |     
+ |                  |   |       X  X  X  X |     
+ | O                |   |       X  X  X  X |     
+ | O                |   |       X  X  X  X |     1 point
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: A192K
+Pip counts: O 172, X 41
+
+* rchoice moves bar/19
+
+Rolled 63 (-0.018):
+*    1. Cubeful 0-ply    bar/19                       Eq.: -2.929
+       0.034 0.000 0.000 - 0.966 0.952 0.078
+
+
+Move number 43:  A192K to play 21
+
+ GNU Backgammon  Position ID: bG5gIHB37wMAAA
+                 Match ID   : QQmlAEAACAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: rchoice (Cube: 2)
+ |                O | O | O     O  O       |     4 points
+ |                O | O | O     O  O       |     
+ |                  | O | O                |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     5 points match
+ |                  |   |       X          |    
+ |                  |   |       X  X       |     
+ |                  |   |       X  X  X  X |     
+ | O                |   |       X  X  X  X |     Rolled 21
+ | O                |   | O     X  X  X  X |     1 point
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: A192K
+Pip counts: O 166, X 41
+
+* A192K moves 4/2 1/off
+
+Rolled 21 (+0.036):
+     1. Cubeful 0-ply    2/off 1/off                  Eq.: +2.910
+       0.969 0.940 0.087 - 0.031 0.000 0.000
+     2. Cubeful 0-ply    4/3 2/off                    Eq.: +2.891 (-0.018)
+       0.964 0.936 0.059 - 0.036 0.000 0.000
+*    3. Cubeful 0-ply    4/2 1/off                    Eq.: +2.891 (-0.019)
+       0.963 0.936 0.062 - 0.037 0.000 0.000
+     4. Cubeful 0-ply    3/off                        Eq.: +2.891 (-0.019)
+       0.963 0.936 0.060 - 0.037 0.000 0.000
+     5. Cubeful 0-ply    4/3 4/2                      Eq.: +2.873 (-0.036)
+       0.958 0.933 0.038 - 0.042 0.001 0.000
+
+
+Move number 44:  rchoice to play 61
+
+ GNU Backgammon  Position ID: e+8BAAA2NzAQOA
+                 Match ID   : AQGnAEAACAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: rchoice (Cube: 2)
+ |                O | O | O     O  O       |     4 points
+ |                O | O | O     O  O       |     Rolled 61
+ |                  | O | O                |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     5 points match
+ |                  |   |                  |    
+ |                  |   |       X  X  X    |     
+ |                  |   |       X  X  X    |     
+ | O                |   |       X  X  X  X |     
+ | O                |   | O     X  X  X  X | X   1 point
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: A192K
+Pip counts: O 166, X 38
+
+* rchoice moves bar/19
+
+Rolled 61 (-0.028):
+*    1. Cubeful 0-ply    bar/19                       Eq.: -2.982
+       0.021 0.000 0.000 - 0.979 0.965 0.041
+
+
+Move number 45:  A192K to play 43
+
+ GNU Backgammon  Position ID: bG5gYGB77wEAAA
+                 Match ID   : QQmuAEAACAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: rchoice (Cube: 2)
+ |                O | O | O     O  O       |     4 points
+ |                O | O | O     O  O       |     
+ |                  |   | O                |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     5 points match
+ |                  |   |                  |    
+ |                  |   |       X  X  X    |     
+ |                  |   |       X  X  X    |     
+ | O                |   | O     X  X  X  X |     Rolled 43
+ | O                |   | O     X  X  X  X | X   1 point
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: A192K
+Pip counts: O 160, X 38
+
+* A192K moves 4/1 4/off
+
+Rolled 43 (+0.002):
+     1. Cubeful 0-ply    4/off 3/off                  Eq.: +2.997
+       0.983 0.968 0.022 - 0.017 0.000 0.000
+*    2. Cubeful 0-ply    4/1 4/off                    Eq.: +2.983 (-0.014)
+       0.980 0.965 0.011 - 0.020 0.000 0.000
+
+
+Move number 46:  rchoice to play 43
+
+ GNU Backgammon  Position ID: 994AAACbGxgYGA
+                 Match ID   : AQGuAEAACAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: rchoice (Cube: 2)
+ |                O | O | O     O  O       |     4 points
+ |                O | O | O     O  O       |     Rolled 43
+ |                  |   | O                |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     5 points match
+ |                  |   |                  |    
+ |                  |   |          X  X    |     
+ |                  |   |          X  X  X |     
+ | O                |   | O     X  X  X  X | X   
+ | O                |   | O     X  X  X  X | X   1 point
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: A192K
+Pip counts: O 160, X 31
+
+* rchoice cannot move
+
+Rolled 43 (+0.007):
+*    Cannot move
+
+
+Move number 47:  A192K to play 21
+
+ GNU Backgammon  Position ID: bG5gYGD33gAAAA
+                 Match ID   : QQmlAEAACAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: rchoice (Cube: 2)
+ |                O | O | O     O  O       |     4 points
+ |                O | O | O     O  O       |     
+ |                  |   | O                |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     5 points match
+ |                  |   |                  |    
+ |                  |   |          X  X    |     
+ |                  |   |          X  X  X |     
+ | O                |   | O     X  X  X  X | X   Rolled 21
+ | O                |   | O     X  X  X  X | X   1 point
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: A192K
+Pip counts: O 160, X 31
+
+* A192K moves 2/off 1/off
+
+Rolled 21 (+0.014):
+*    1. Cubeful 0-ply    2/off 1/off                  Eq.: +3.009
+       0.985 0.971 0.032 - 0.015 0.000 0.000
+     2. Cubeful 0-ply    2/1 2/off                    Eq.: +2.997 (-0.012)
+       0.983 0.968 0.015 - 0.017 0.000 0.000
+     3. Cubeful 0-ply    3/2 3/1                      Eq.: +2.984 (-0.025)
+       0.980 0.964 0.016 - 0.020 0.000 0.000
+     4. Cubeful 0-ply    4/3 4/2                      Eq.: +2.964 (-0.045)
+       0.978 0.957 0.015 - 0.022 0.000 0.000
+     5. Cubeful 0-ply    3/off                        Eq.: +2.926 (-0.083)
+       0.969 0.947 0.027 - 0.031 0.000 0.000
+
+
+Move number 48:  rchoice to play 55
+
+ GNU Backgammon  Position ID: uzcAAMDmBgYGBg
+                 Match ID   : AYG2AEAACAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: rchoice (Cube: 2)
+ |                O | O | O     O  O       |     4 points
+ |                O | O | O     O  O       |     Rolled 55
+ |                  |   | O                |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     5 points match
+ |                  |   |                  |    
+ |                  |   |          X       | X   
+ |                  |   |          X  X    | X   
+ | O                |   | O     X  X  X  X | X   
+ | O                |   | O     X  X  X  X | X   1 point
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: A192K
+Pip counts: O 160, X 28
+
+* rchoice moves bar/15(2)
+
+Rolled 55 (-0.085):
+     1. Cubeful 0-ply    bar/10 bar/20                Eq.: -3.094
+       0.000 0.000 0.000 - 1.000 0.998 0.000
+     2. Cubeful 0-ply    bar/15 bar/20 19/14          Eq.: -3.094 (-0.000)
+       0.000 0.000 0.000 - 1.000 0.998 0.000
+     3. Cubeful 0-ply    bar/15 bar/20 13/8           Eq.: -3.094 (-0.000)
+       0.000 0.000 0.000 - 1.000 0.998 0.000
+*    4. Cubeful 0-ply    bar/15(2)                    Eq.: -3.095 (-0.001)
+       0.000 0.000 0.000 - 1.000 0.998 0.000
+     5. Cubeful 0-ply    bar/15 bar/20 7/2            Eq.: -3.095 (-0.001)
+       0.000 0.000 0.000 - 1.000 0.998 0.000
+
+
+Move number 49:  A192K to play 43
+
+ GNU Backgammon  Position ID: bG5ghgG7NwAAAA
+                 Match ID   : QQmuAEAACAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: rchoice (Cube: 2)
+ |                O |   | O     O  O       |     4 points
+ |                O |   | O     O  O       |     
+ |                  |   | O                |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     5 points match
+ |                  |   |                  |    
+ |                  |   |          X       | X   
+ |                  |   |          X  X    | X   
+ | O     O          |   | O     X  X  X  X | X   Rolled 43
+ | O     O          |   | O     X  X  X  X | X   1 point
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: A192K
+Pip counts: O 140, X 28
+
+* A192K moves 4/off 3/off
+
+Rolled 43 (+0.001):
+*    1. Cubeful 0-ply    4/off 3/off                  Eq.: +3.094
+       1.000 0.998 0.000 - 0.000 0.000 0.000
+     2. Cubeful 0-ply    4/1 4/off                    Eq.: +3.092 (-0.002)
+       1.000 0.997 0.000 - 0.000 0.000 0.000
+
+
+Move number 50:  rchoice to play 54
+
+ GNU Backgammon  Position ID: uwsAALC5gRkGAA
+                 Match ID   : AYGyAEAACAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: rchoice (Cube: 2)
+ |                O |   | O     O  O       |     4 points
+ |                O |   | O     O  O       |     Rolled 54
+ |                  |   | O                |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     5 points match
+ |                  |   |                  | X  
+ |                  |   |                  | X   
+ |                  |   |          X  X    | X   
+ | O     O          |   | O        X  X  X | X   
+ | O     O          |   | O     X  X  X  X | XX  1 point
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: A192K
+Pip counts: O 140, X 21
+
+* rchoice moves 15/11 15/10
+
+Rolled 54 (-0.001):
+     1. Cubeful 0-ply    19/15 19/14                  Eq.: -3.096
+       0.000 0.000 0.000 - 1.000 0.999 0.000
+     2. Cubeful 0-ply    19/15 13/8                   Eq.: -3.096 (-0.000)
+       0.000 0.000 0.000 - 1.000 0.999 0.000
+     3. Cubeful 0-ply    19/15 7/2                    Eq.: -3.096 (-0.000)
+       0.000 0.000 0.000 - 1.000 0.999 0.000
+     4. Cubeful 0-ply    19/14 15/11                  Eq.: -3.097 (-0.001)
+       0.000 0.000 0.000 - 1.000 0.999 0.000
+*    5. Cubeful 0-ply    15/11 15/10                  Eq.: -3.097 (-0.001)
+       0.000 0.000 0.000 - 1.000 0.999 0.000
+
+
+Move number 51:  A192K to play 53
+
+ GNU Backgammon  Position ID: bG6UgQG7CwAAAA
+                 Match ID   : QYmuAEAACAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: rchoice (Cube: 2)
+ |    O  O        O |   | O     O  O       |     4 points
+ |                O |   | O     O  O       |     
+ |                  |   | O                |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     5 points match
+ |                  |   |                  | X  
+ |                  |   |                  | X   
+ |                  |   |          X  X    | X   
+ | O                |   | O        X  X  X | X   Rolled 53
+ | O                |   | O     X  X  X  X | XX  1 point
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: A192K
+Pip counts: O 131, X 21
+
+* A192K moves 4/off 3/off
+
+Rolled 53 (+0.000):
+*    1. Cubeful 0-ply    4/off 3/off                  Eq.: +3.097
+       1.000 0.999 0.000 - 0.000 0.000 0.000
+     2. Cubeful 0-ply    4/1 3/off                    Eq.: +3.096 (-0.001)
+       1.000 0.999 0.000 - 0.000 0.000 0.000
+
+
+Move number 52:  rchoice to play 52
+
+ GNU Backgammon  Position ID: uwEAAGxulIEBAA
+                 Match ID   : AYGqAEAACAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: rchoice (Cube: 2)
+ |    O  O        O |   | O     O  O       |     4 points
+ |                O |   | O     O  O       |     Rolled 52
+ |                  |   | O                |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     5 points match
+ |                  |   |                  | X  
+ |                  |   |                  | X   
+ |                  |   |             X    | XX  
+ | O                |   | O        X  X  X | XX  
+ | O                |   | O        X  X  X | XX  1 point
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: A192K
+Pip counts: O 131, X 14
+
+* rchoice moves 19/17 11/6
+
+Rolled 52 (-0.001):
+     1. Cubeful 0-ply    19/14 13/11                  Eq.: -3.098
+       0.000 0.000 0.000 - 1.000 1.000 0.000
+     2. Cubeful 0-ply    13/11 7/2                    Eq.: -3.098 (-0.000)
+       0.000 0.000 0.000 - 1.000 1.000 0.000
+     3. Cubeful 0-ply    19/14 7/5                    Eq.: -3.098 (-0.000)
+       0.000 0.000 0.000 - 1.000 1.000 0.000
+     4. Cubeful 0-ply    7/5 7/2                      Eq.: -3.098 (-0.000)
+       0.000 0.000 0.000 - 1.000 1.000 0.000
+     5. Cubeful 0-ply    13/6                         Eq.: -3.098 (-0.000)
+       0.000 0.000 0.000 - 1.000 1.000 0.000
+*   10. Cubeful 0-ply    19/17 11/6                   Eq.: -3.098 (-0.000)
+       0.000 0.000 0.000 - 1.000 1.000 0.000
+
+
+Move number 53:  A192K to play 42
+
+ GNU Backgammon  Position ID: bN6IIQG7AQAAAA
+                 Match ID   : QQmqAEAACAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: rchoice (Cube: 2)
+ |       O        O |   | O     O  O       |     4 points
+ |                O |   | O     O  O       |     
+ |                  |   | O                |     
+ |                  |   | O                |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     5 points match
+ |                  |   |                  | X  
+ |                  |   |                  | X   
+ |                  |   |             X    | XX  
+ | O                |   |          X  X  X | XX  Rolled 42
+ | O           O    |   | O        X  X  X | XX  1 point
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: A192K
+Pip counts: O 124, X 14
+
+* A192K moves 3/off 2/off
+
+Rolled 42 (+0.000):
+     1. Cubeful 0-ply    3/1 3/off                    Eq.: +3.098
+       1.000 1.000 0.000 - 0.000 0.000 0.000
+*    2. Cubeful 0-ply    3/off 2/off                  Eq.: +3.098 (-0.000)
+       1.000 1.000 0.000 - 0.000 0.000 0.000
+
+
+Move number 54:  rchoice to play 31
+
+ GNU Backgammon  Position ID: WwAAAJs3YkgAAA
+                 Match ID   : AYGlAEAACAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: rchoice (Cube: 2)
+ |       O        O |   | O     O  O       |     4 points
+ |                O |   | O     O  O       |     Rolled 31
+ |                  |   | O                |     
+ |                  |   | O                |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     5 points match
+ |                  |   |                  | XX 
+ |                  |   |                  | XX  
+ |                  |   |                  | XX  
+ | O                |   |             X  X | XX  
+ | O           O    |   | O        X  X  X | XX  1 point
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: A192K
+Pip counts: O 124, X 9
+
+* rchoice moves 19/16 7/6
+
+Rolled 31 (+0.000):
+     1. Cubeful 0-ply    4/1 3/2                      Eq.: -3.098
+       0.000 0.000 0.000 - 1.000 1.000 0.000
+     2. Cubeful 0-ply    19/15                        Eq.: -3.098 (-0.000)
+       0.000 0.000 0.000 - 1.000 1.000 0.000
+     3. Cubeful 0-ply    19/16 13/12                  Eq.: -3.098 (-0.000)
+       0.000 0.000 0.000 - 1.000 1.000 0.000
+     4. Cubeful 0-ply    19/16 10/9                   Eq.: -3.098 (-0.000)
+       0.000 0.000 0.000 - 1.000 1.000 0.000
+*    5. Cubeful 0-ply    19/16 7/6                    Eq.: -3.098 (-0.000)
+       0.000 0.000 0.000 - 1.000 1.000 0.000
+
+
+Move number 55:  A192K to play 61
+
+ GNU Backgammon  Position ID: bL6IUQBbAAAAAA
+                 Match ID   : QQmnAEAACAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: rchoice (Cube: 2)
+ |       O        O |   | O     O  O       |     4 points
+ |                  |   | O     O  O       |     
+ |                  |   | O                |     
+ |                  |   | O                |     
+ |                  |   | O                |    
+v|                  |BAR|                  |     5 points match
+ |                  |   |                  | XX 
+ |                  |   |                  | XX  
+ |                  |   |                  | XX  
+ | O                |   |             X  X | XX  Rolled 61
+ | O        O  O    |   |          X  X  X | XX  1 point
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: A192K
+Pip counts: O 120, X 9
+
+* A192K moves 3/off 1/off
+
+Rolled 61 (-0.000):
+     1. Cubeful 0-ply    3/off 2/1                    Eq.: +3.098
+       1.000 1.000 0.000 - 0.000 0.000 0.000
+*    2. Cubeful 0-ply    3/off 1/off                  Eq.: +3.098 (-0.000)
+       1.000 1.000 0.000 - 0.000 0.000 0.000
+     3. Cubeful 0-ply    3/off                        Eq.: +3.098 (-0.000)
+       1.000 1.000 0.000 - 0.000 0.000 0.000
+
+
+Move number 56:  rchoice to play 43
+
+ GNU Backgammon  Position ID: DQAAwOaLGAUAAA
+                 Match ID   : AQGuAEAACAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: rchoice (Cube: 2)
+ |       O        O |   | O     O  O       |     4 points
+ |                  |   | O     O  O       |     Rolled 43
+ |                  |   | O                |     
+ |                  |   | O                |     
+ |                  |   | O                |    
+^|                  |BAR|                  |     5 points match
+ |                  |   |                  | XX 
+ |                  |   |                  | XX  
+ |                  |   |                  | XX  
+ | O                |   |             X    | XXX 
+ | O        O  O    |   |             X  X | XXX 1 point
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: A192K
+Pip counts: O 120, X 5
+
+* rchoice moves 16/12 7/4
+
+Rolled 43 (+0.000):
+     1. Cubeful 0-ply    6/2 4/1                      Eq.: -3.098
+       0.000 0.000 0.000 - 1.000 1.000 0.000
+     2. Cubeful 0-ply    17/10                        Eq.: -3.098 (-0.000)
+       0.000 0.000 0.000 - 1.000 1.000 0.000
+     3. Cubeful 0-ply    17/13 10/7                   Eq.: -3.098 (-0.000)
+       0.000 0.000 0.000 - 1.000 1.000 0.000
+     4. Cubeful 0-ply    17/13 7/4                    Eq.: -3.098 (-0.000)
+       0.000 0.000 0.000 - 1.000 1.000 0.000
+     5. Cubeful 0-ply    17/13 6/3                    Eq.: -3.098 (-0.000)
+       0.000 0.000 0.000 - 1.000 1.000 0.000
+*   11. Cubeful 0-ply    16/12 7/4                    Eq.: -3.098 (-0.000)
+       0.000 0.000 0.000 - 1.000 1.000 0.000
+
+
+Move number 57:  A192K to play 51
+
+ GNU Backgammon  Position ID: 7HxIQwANAAAAAA
+                 Match ID   : QYmmAEAACAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: rchoice (Cube: 2)
+ | O     O          |   | O     O  O       |     4 points
+ |                  |   | O     O  O       |     
+ |                  |   | O     O          |     
+ |                  |   | O                |     
+ |                  |   | O                |    
+v|                  |BAR|                  |     5 points match
+ |                  |   |                  | XX 
+ |                  |   |                  | XX  
+ |                  |   |                  | XX  
+ | O                |   |             X    | XXX Rolled 51
+ | O           O    |   |             X  X | XXX 1 point
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: A192K
+Pip counts: O 113, X 5
+
+* A192K moves 2/1 2/off
+
+Rolled 51 (-0.000):
+*    1. Cubeful 0-ply    2/1 2/off                    Eq.: +3.098
+       1.000 1.000 0.000 - 0.000 0.000 0.000
+     2. Cubeful 0-ply    2/off 1/off                  Eq.: +3.098 (-0.000)
+       1.000 1.000 0.000 - 0.000 0.000 0.000
+
+
+Move number 58:  rchoice to play 65
+
+ GNU Backgammon  Position ID: AwAAYOdDGgIAAA
+                 Match ID   : AQG3AEAACAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: rchoice (Cube: 2)
+ | O     O          |   | O     O  O       |     4 points
+ |                  |   | O     O  O       |     Rolled 65
+ |                  |   | O     O          |     
+ |                  |   | O                |     
+ |                  |   | O                |    
+^|                  |BAR|                  |     5 points match
+ |                  |   |                  | XX 
+ |                  |   |                  | XX  
+ |                  |   |                  | XXX 
+ | O                |   |                X | XXX 
+ | O           O    |   |                X | XXX 1 point
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: A192K
+Pip counts: O 113, X 2
+
+* rchoice moves 17/11 10/5
+
+Rolled 65 (+0.000):
+     1. Cubeful 0-ply    10/4 6/1                     Eq.: -3.098
+       0.000 0.000 0.000 - 1.000 1.000 0.000
+     2. Cubeful 0-ply    17/11 12/7                   Eq.: -3.098 (-0.000)
+       0.000 0.000 0.000 - 1.000 1.000 0.000
+     3. Cubeful 0-ply    17/6                         Eq.: -3.098 (-0.000)
+       0.000 0.000 0.000 - 1.000 1.000 0.000
+*    4. Cubeful 0-ply    17/11 10/5                   Eq.: -3.098 (-0.000)
+       0.000 0.000 0.000 - 1.000 1.000 0.000
+     5. Cubeful 0-ply    17/11 6/1                    Eq.: -3.098 (-0.000)
+       0.000 0.000 0.000 - 1.000 1.000 0.000
+
+
+Move number 59:  A192K to play 21
+
+ GNU Backgammon  Position ID: 7PqgBgADAAAAAA
+                 Match ID   : QQmlAEAACAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: rchoice (Cube: 2)
+ | O  O             |   | O  O  O  O       |     4 points
+ |                  |   | O     O  O       |     
+ |                  |   | O     O          |     
+ |                  |   | O                |     
+ |                  |   | O                |    
+v|                  |BAR|                  |     5 points match
+ |                  |   |                  | XX 
+ |                  |   |                  | XX  
+ |                  |   |                  | XXX 
+ | O                |   |                X | XXX Rolled 21
+ | O                |   |                X | XXX 1 point
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: A192K
+Pip counts: O 102, X 2
+
+* A192K moves 1/off(2)
+
+Rolled 21 (-0.000):
+*    1. Cubeful 0-ply    1/off(2)                     Eq.: +3.098
+       1.000 1.000 0.000 - 0.000 0.000 0.000
+
+
+A192K wins 4 points
+
+Game statistics for game 5
+
+Player                                   rchoice                 A192K                  
+
+Checkerplay statistics
+
+Total moves                               28                      29                    
+Unforced moves                            16                      27                    
+Unmarked moves                            25                      25                    
+Moves marked doubtful                      0                       0                    
+Moves marked bad                           2                       3                    
+Moves marked very bad                      1                       1                    
+Error total EMG (MWC)                         -0.275 ( -6.165%)       -0.985 (-24.038%) 
+Error rate mEMG (MWC)                        -17.2   ( -0.385%)      -36.5   ( -0.890%) 
+Chequerplay rating                       Intermediate            Awful!                 
+
+
+Luck statistics
+
+Rolls marked very lucky                    0                       1                    
+Rolls marked lucky                         0                       3                    
+Rolls unmarked                            26                      25                    
+Rolls marked unlucky                       2                       0                    
+Rolls marked very unlucky                  0                       0                    
+Luck total EMG (MWC)                          -1.533 (-39.327%)       +1.939 (+47.411%) 
+Luck rate mEMG (MWC)                         -54.7   ( -1.405%)      +66.9   ( +1.635%) 
+Luck rating                              Bad dice, man!          Go to Las Vegas        
+
+
+Cube statistics
+
+Total cube decisions                       1                       1                    
+Close or actual cube decisions             1                       1                    
+Doubles                                    0                       1                    
+Takes                                      1                       0                    
+Passes                                     0                       0                    
+Missed doubles below CP (EMG (MWC))        0                       0                    
+Missed doubles above CP (EMG (MWC))        0                       0                    
+Wrong doubles below DP (EMG (MWC))         0                       0                    
+Wrong doubles above TG (EMG (MWC))         0                       0                    
+Wrong takes (EMG (MWC))                    0                       0                    
+Wrong passes (EMG (MWC))                   0                       0                    
+Error total EMG (MWC)                         -0.000 ( -0.000%)       -0.000 ( -0.000%) 
+Error rate mEMG (MWC)                         -0.0   ( -0.000%)       -0.0   ( -0.000%) 
+Cube decision rating                     Supernatural            Supernatural           
+
+
+Overall statistics
+
+Error total EMG (MWC)                         -0.275 ( -6.165%)       -0.985 (-24.038%) 
+Error rate mEMG (MWC)                        -16.1   ( -0.363%)      -35.2   ( -0.859%) 
+Snowie error rate                             -4.8   ( +0.000%)      -17.3   ( +0.000%) 
+Overall rating                           Intermediate            Awful!                 
+Actual result                             -69.00%                 +69.00%               
+Luck adjusted result                      +17.74%                 -17.74%               
+Luck based FIBS rating diff.             +288.17                                        
+Error based abs. FIBS rating             1811.5                  1542.7                 
+Chequerplay errors rating loss            238.5                   507.3                 
+Cube errors rating loss                     0.0                     0.0                 
+
+
+
+
+Match statistics
+
+Player                                   rchoice                 A192K                  
+
+Checkerplay statistics
+
+Total moves                               94                      95                    
+Unforced moves                            71                      84                    
+Unmarked moves                            86                      82                    
+Moves marked doubtful                      1                       7                    
+Moves marked bad                           4                       4                    
+Moves marked very bad                      3                       2                    
+Error total EMG (MWC)                         -0.961 (-14.988%)       -1.671 (-32.362%) 
+Error rate mEMG (MWC)                        -13.5   ( -0.211%)      -19.9   ( -0.385%) 
+Chequerplay rating                       Intermediate            Casual player          
+
+
+Luck statistics
+
+Rolls marked very lucky                    0                       1                    
+Rolls marked lucky                         5                       5                    
+Rolls unmarked                            86                      88                    
+Rolls marked unlucky                       3                       1                    
+Rolls marked very unlucky                  0                       0                    
+Luck total EMG (MWC)                          -0.331 (-30.539%)       +1.283 (+38.433%) 
+Luck rate mEMG (MWC)                          -3.5   ( -0.325%)      +13.5   ( +0.405%) 
+Luck rating                              None                    None                   
+
+
+Cube statistics
+
+Total cube decisions                      18                      41                    
+Close or actual cube decisions             9                       5                    
+Doubles                                    3                       1                    
+Takes                                      1                       1                    
+Passes                                     0                       2                    
+Missed doubles below CP (EMG (MWC))        0                       0                    
+Missed doubles above CP (EMG (MWC))        1 (-0.098 ( -0.727%))   0                    
+Wrong doubles below DP (EMG (MWC))         2 (-0.660 ( -5.562%))   0                    
+Wrong doubles above TG (EMG (MWC))         1 (-0.042 ( -0.311%))   0                    
+Wrong takes (EMG (MWC))                    0                       0                    
+Wrong passes (EMG (MWC))                   0                       1 (-0.725 ( -5.603%))
+Error total EMG (MWC)                         -0.800 ( -6.600%)       -0.725 ( -5.603%) 
+Error rate mEMG (MWC)                        -88.9   ( -0.733%)     -144.9   ( -1.121%) 
+Cube decision rating                     Awful!                  Awful!                 
+
+
+Overall statistics
+
+Error total EMG (MWC)                         -1.762 (-21.588%)       -2.396 (-37.965%) 
+Error rate mEMG (MWC)                        -22.0   ( -0.270%)      -26.9   ( -0.427%) 
+Snowie error rate                             -9.3   ( +0.000%)      -12.7   ( +0.000%) 
+Overall rating                           Casual player           Beginner               
+Actual result                             -50.00%                 +50.00%               
+Luck adjusted result                      +18.97%                 -18.97%               
+Luck based FIBS rating diff.             +310.30                                        
+Error based abs. FIBS rating             1794.2                  1663.3                 
+Chequerplay errors rating loss            188.3                   276.6                 
+Cube errors rating loss                    67.5                   110.0                 
+
+
+
+
+Output generated 2026-02-09 by GNU Backgammon 1.08.003 20260205
+

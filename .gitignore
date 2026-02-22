@@ -1,0 +1,5 @@
+bganalyze
+frontend/dist/
+frontend/node_modules/
+/.claude
+/scripts
