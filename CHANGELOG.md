@@ -1,6 +1,8 @@
 # Changelog
 
-## Unreleased
+## v0.2.0
+
+- Optimize for mobile viewing
 
 ## v0.1.0
 

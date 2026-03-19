@@ -7,6 +7,7 @@ import { STARTING_POSITION, STARTING_PIP_COUNTS } from "./types/match";
 import type { MatchData } from "./types/match";
 import { decodePositionId } from "./lib/positionId";
 import { parseMoveNotation } from "./lib/moveNotation";
+import { useIsMobile } from "./lib/useIsMobile";
 
 interface HistoryEntry {
   id: string;
@@ -235,6 +236,63 @@ function App() {
     setSelectedAlt(altIdx);
   }, []);
 
+  const isMobile = useIsMobile();
+
+  const goNextMove = useCallback(() => {
+    if (!matchData) return;
+    setSelectedGame((prevGame) => {
+      if (prevGame === -1) {
+        const newGame = 0;
+        setSelectedMove(0);
+        setSelectedAlt(chosenAltIndex(matchData, newGame, 0));
+        return newGame;
+      }
+      setSelectedMove((prevMove) => {
+        const game = matchData.Games[prevGame];
+        if (!game) return prevMove;
+        const nextMove = prevMove + 1;
+        if (nextMove < game.Moves.length) {
+          setSelectedAlt(chosenAltIndex(matchData, prevGame, nextMove));
+          return nextMove;
+        }
+        const nextGame = prevGame + 1;
+        if (nextGame < matchData.Games.length) {
+          setSelectedGame(nextGame);
+          setSelectedAlt(chosenAltIndex(matchData, nextGame, 0));
+          return 0;
+        }
+        return prevMove;
+      });
+      return prevGame;
+    });
+  }, [matchData]);
+
+  const goPrevMove = useCallback(() => {
+    if (!matchData) return;
+    setSelectedGame((prevGame) => {
+      if (prevGame === -1) return prevGame;
+      setSelectedMove((prevMove) => {
+        if (prevMove > 0) {
+          const newMove = prevMove - 1;
+          setSelectedAlt(chosenAltIndex(matchData, prevGame, newMove));
+          return newMove;
+        }
+        const prevGameIdx = prevGame - 1;
+        if (prevGameIdx >= 0) {
+          const prevGameData = matchData.Games[prevGameIdx];
+          const lastMove = prevGameData.Moves.length - 1;
+          setSelectedGame(prevGameIdx);
+          setSelectedAlt(chosenAltIndex(matchData, prevGameIdx, lastMove));
+          return lastMove;
+        }
+        setSelectedGame(-1);
+        setSelectedAlt(0);
+        return 0;
+      });
+      return prevGame;
+    });
+  }, [matchData]);
+
   // Keyboard navigation
   useEffect(() => {
     if (state.phase !== "viewing" || !matchData) return;
@@ -250,53 +308,8 @@ function App() {
       }
       if (e.key === "ArrowRight" || e.key === "ArrowLeft") {
         e.preventDefault();
-        setSelectedGame((prevGame) => {
-          if (e.key === "ArrowRight") {
-            if (prevGame === -1) {
-              const newGame = 0;
-              setSelectedMove(0);
-              setSelectedAlt(chosenAltIndex(matchData, newGame, 0));
-              return newGame;
-            }
-            setSelectedMove((prevMove) => {
-              const game = matchData.Games[prevGame];
-              if (!game) return prevMove;
-              const nextMove = prevMove + 1;
-              if (nextMove < game.Moves.length) {
-                setSelectedAlt(chosenAltIndex(matchData, prevGame, nextMove));
-                return nextMove;
-              }
-              const nextGame = prevGame + 1;
-              if (nextGame < matchData.Games.length) {
-                setSelectedGame(nextGame);
-                setSelectedAlt(chosenAltIndex(matchData, nextGame, 0));
-                return 0;
-              }
-              return prevMove;
-            });
-          } else {
-            if (prevGame === -1) return prevGame;
-            setSelectedMove((prevMove) => {
-              if (prevMove > 0) {
-                const newMove = prevMove - 1;
-                setSelectedAlt(chosenAltIndex(matchData, prevGame, newMove));
-                return newMove;
-              }
-              const prevGameIdx = prevGame - 1;
-              if (prevGameIdx >= 0) {
-                const prevGameData = matchData.Games[prevGameIdx];
-                const lastMove = prevGameData.Moves.length - 1;
-                setSelectedGame(prevGameIdx);
-                setSelectedAlt(chosenAltIndex(matchData, prevGameIdx, lastMove));
-                return lastMove;
-              }
-              setSelectedGame(-1);
-              setSelectedAlt(0);
-              return 0;
-            });
-          }
-          return prevGame;
-        });
+        if (e.key === "ArrowRight") goNextMove();
+        else goPrevMove();
       }
 
       if (e.key === "ArrowDown" || e.key === "ArrowUp") {
@@ -323,16 +336,16 @@ function App() {
 
     window.addEventListener("keydown", handler);
     return () => window.removeEventListener("keydown", handler);
-  }, [state.phase, matchData]);
+  }, [state.phase, matchData, goNextMove, goPrevMove]);
 
   // --- Home screen ---
   if (state.phase === "idle") {
     return (
-      <div style={{ maxWidth: 960, margin: "60px auto", padding: "0 32px" }}>
+      <div style={{ maxWidth: 960, margin: isMobile ? "24px auto" : "60px auto", padding: isMobile ? "0 16px" : "0 32px" }}>
         <h1>BGAnalyze</h1>
-        <div style={{ display: "flex", gap: 48, alignItems: "flex-start" }}>
-          {/* Left: history */}
-          <div style={{ flex: 1, minWidth: 0 }}>
+        <div style={{ display: "flex", flexDirection: isMobile ? "column" : "row", gap: isMobile ? 24 : 48, alignItems: "flex-start" }}>
+          {/* History (left on desktop, top on mobile) */}
+          <div style={{ flex: 1, minWidth: 0, order: isMobile ? 1 : undefined, width: isMobile ? "100%" : undefined }}>
             <h3 style={{ margin: "0 0 12px", fontSize: 16, color: "#666" }}>Recently Analyzed</h3>
             {historyLoading ? (
               <p style={{ fontSize: 15, color: "#999" }}>Loading...</p>
@@ -392,8 +405,8 @@ function App() {
             )}
           </div>
 
-          {/* Right: upload */}
-          <div style={{ width: 360, flexShrink: 0 }}>
+          {/* Upload (right on desktop, below history on mobile) */}
+          <div style={{ width: isMobile ? "100%" : 360, flexShrink: 0, order: isMobile ? 2 : undefined }}>
             <h3 style={{ margin: "0 0 12px", fontSize: 16, color: "#666" }}>New Analysis</h3>
 
             <Upload onUpload={onUpload} />
@@ -582,9 +595,14 @@ function App() {
   const isSummary = selectedGame === -1;
 
   return (
-    <div style={{ height: "100vh", display: "flex", overflow: "hidden" }}>
-      {/* Left panel: game selector + move list or summary */}
-      <div style={{ width: 420, display: "flex", flexDirection: "column", borderRight: "1px solid #e5e7eb", minHeight: 0, overflow: "hidden" }}>
+    <div style={{ height: "100vh", display: "flex", flexDirection: isMobile ? "column" : "row", overflow: "hidden" }}>
+      {/* Left panel / bottom panel on mobile: game selector + move list or summary */}
+      <div style={{
+        ...(isMobile
+          ? { order: 2, flex: 1, minHeight: 0, borderTop: "1px solid #e5e7eb" }
+          : { width: 420, borderRight: "1px solid #e5e7eb", minHeight: 0 }),
+        display: "flex", flexDirection: "column", overflow: "hidden",
+      }}>
         {matchData && (
           <div style={{ padding: "6px 8px", borderBottom: "1px solid #e5e7eb", display: "flex", gap: 6, alignItems: "center" }}>
             <button
@@ -627,16 +645,22 @@ function App() {
         </div>
       </div>
 
-      {/* Right panel: board */}
-      <div style={{ flex: 1, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", padding: 16, minHeight: 0, overflow: "hidden" }}>
+      {/* Right panel / top panel on mobile: board */}
+      <div style={{
+        display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center",
+        padding: isMobile ? 8 : 16, minHeight: 0, overflow: "hidden",
+        ...(isMobile ? { order: 1, maxHeight: "45vh" } : { flex: 1 }),
+      }}>
         <div style={{ alignSelf: "flex-end", marginBottom: 4, display: "flex", gap: 4, alignItems: "center" }}>
-          <button
-            onClick={() => setShowHelp(true)}
-            style={{ fontSize: 12, padding: "2px 8px", cursor: "pointer" }}
-            title="Keyboard shortcuts"
-          >
-            ?
-          </button>
+          {!isMobile && (
+            <button
+              onClick={() => setShowHelp(true)}
+              style={{ fontSize: 12, padding: "2px 8px", cursor: "pointer" }}
+              title="Keyboard shortcuts"
+            >
+              ?
+            </button>
+          )}
           <button
             onClick={() => setFlipped((f) => {
               const next = !f;
@@ -653,7 +677,7 @@ function App() {
             style={{ fontSize: 12, padding: "2px 8px", cursor: "pointer" }}
             title="Flip board"
           >
-            Flip Board
+            {isMobile ? "Flip" : "Flip Board"}
           </button>
           {state.phase === "viewing" && viewingMatchId && (
             <>
@@ -694,34 +718,89 @@ function App() {
             </>
           )}
         </div>
-        <Board
-          position={position}
-          players={matchData ? { player1: matchData.Player1, player2: matchData.Player2 } : undefined}
-          pipCounts={pipCounts}
-          cubeValue={cubeValue}
-          cubeOwner={cubeOwner}
-          score={isSummary ? undefined : game?.ScoreBefore}
-          matchLength={matchData?.MatchLength}
-          crawfordLabel={isSummary ? undefined : crawfordLabel}
-          arrows={isSummary ? undefined : arrows}
-          arrowPlayerOnRoll={playerOnRoll}
-          arrowColor={arrowColor}
-          dice={isSummary ? undefined : currentMove?.Dice}
-          dicePlayer={playerOnRoll}
-          flipped={flipped}
-          matchInfo={matchData ? (() => {
-            const fs = computeFinalScore(matchData);
-            const stats = matchData.MatchStats?.Overall;
-            const [i, j] = flipped ? [1, 0] as const : [0, 1] as const;
-            return {
-              player1: flipped ? matchData.Player2 : matchData.Player1,
-              player2: flipped ? matchData.Player1 : matchData.Player2,
-              score: [fs[i], fs[j]] as [number, number],
-              player1PR: stats ? Math.abs(stats[i].SnowieErrorRate) : undefined,
-              player2PR: stats ? Math.abs(stats[j].SnowieErrorRate) : undefined,
-            };
-          })() : undefined}
-        />
+        {isMobile && matchData && (() => {
+          const topPlayer = flipped ? matchData.Player1 : matchData.Player2;
+          const bottomPlayer = flipped ? matchData.Player2 : matchData.Player1;
+          const topScore = game ? game.ScoreBefore[flipped ? 0 : 1] : 0;
+          const bottomScore = game ? game.ScoreBefore[flipped ? 1 : 0] : 0;
+          const stats = matchData.MatchStats?.Overall;
+          const [si, sj] = flipped ? [1, 0] as const : [0, 1] as const;
+          const topPR = stats ? Math.abs(stats[sj].SnowieErrorRate) : undefined;
+          const bottomPR = stats ? Math.abs(stats[si].SnowieErrorRate) : undefined;
+          return (
+            <div style={{
+              display: "flex", alignItems: "center", justifyContent: "center",
+              gap: 6, fontSize: 13, padding: "4px 0", width: "100%", flexWrap: "wrap",
+            }}>
+              <span style={{ color: "#888", fontSize: 11 }}>&#9650;</span>
+              <span style={{ fontWeight: "bold" }}>{topPlayer}</span>
+              {topPR != null && <span style={{ fontSize: 11, color: "#888" }}>{topPR.toFixed(1)}</span>}
+              <span style={{ fontWeight: "bold" }}>{topScore} – {bottomScore}</span>
+              {bottomPR != null && <span style={{ fontSize: 11, color: "#888" }}>{bottomPR.toFixed(1)}</span>}
+              <span style={{ fontWeight: "bold" }}>{bottomPlayer}</span>
+              <span style={{ color: "#888", fontSize: 11 }}>&#9660;</span>
+              {crawfordLabel && <span style={{ color: "#c00", fontWeight: "bold", fontSize: 11 }}>{crawfordLabel}</span>}
+            </div>
+          );
+        })()}
+        {isMobile ? (
+          <div
+            style={{ position: "relative", width: "100%", flex: 1, minHeight: 0 }}
+            onClick={(e) => {
+              const rect = e.currentTarget.getBoundingClientRect();
+              const x = e.clientX - rect.left;
+              if (x < rect.width / 2) goPrevMove();
+              else goNextMove();
+            }}
+          >
+            <Board
+              position={position}
+              players={matchData ? { player1: matchData.Player1, player2: matchData.Player2 } : undefined}
+              pipCounts={pipCounts}
+              cubeValue={cubeValue}
+              cubeOwner={cubeOwner}
+              score={isSummary ? undefined : game?.ScoreBefore}
+              matchLength={matchData?.MatchLength}
+              crawfordLabel={isSummary ? undefined : crawfordLabel}
+              arrows={isSummary ? undefined : arrows}
+              arrowPlayerOnRoll={playerOnRoll}
+              arrowColor={arrowColor}
+              dice={isSummary ? undefined : currentMove?.Dice}
+              dicePlayer={playerOnRoll}
+              flipped={flipped}
+              hidePlayerInfo
+            />
+          </div>
+        ) : (
+          <Board
+            position={position}
+            players={matchData ? { player1: matchData.Player1, player2: matchData.Player2 } : undefined}
+            pipCounts={pipCounts}
+            cubeValue={cubeValue}
+            cubeOwner={cubeOwner}
+            score={isSummary ? undefined : game?.ScoreBefore}
+            matchLength={matchData?.MatchLength}
+            crawfordLabel={isSummary ? undefined : crawfordLabel}
+            arrows={isSummary ? undefined : arrows}
+            arrowPlayerOnRoll={playerOnRoll}
+            arrowColor={arrowColor}
+            dice={isSummary ? undefined : currentMove?.Dice}
+            dicePlayer={playerOnRoll}
+            flipped={flipped}
+            matchInfo={matchData ? (() => {
+              const fs = computeFinalScore(matchData);
+              const stats = matchData.MatchStats?.Overall;
+              const [i, j] = flipped ? [1, 0] as const : [0, 1] as const;
+              return {
+                player1: flipped ? matchData.Player2 : matchData.Player1,
+                player2: flipped ? matchData.Player1 : matchData.Player2,
+                score: [fs[i], fs[j]] as [number, number],
+                player1PR: stats ? Math.abs(stats[i].SnowieErrorRate) : undefined,
+                player2PR: stats ? Math.abs(stats[j].SnowieErrorRate) : undefined,
+              };
+            })() : undefined}
+          />
+        )}
       </div>
 
       {showHelp && (

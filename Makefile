@@ -1,4 +1,4 @@
-.PHONY: build-frontend build run test test-go test-frontend clean update-deps update-deps-backend update-deps-frontend
+.PHONY: build-frontend build run test test-go test-frontend clean deps-update deps-update-backend deps-update-frontend
 
 frontend/node_modules: frontend/package-lock.json
 	cd frontend && npm install
@@ -24,11 +24,11 @@ test-frontend:
 clean:
 	rm -rf frontend/node_modules frontend/dist bganalyze
 
-update-deps: update-deps-backend update-deps-frontend
+deps-update: deps-update-backend deps-update-frontend
 
-update-deps-backend:
+deps-update-backend:
 	go get -u ./...
 	go mod tidy
 
-update-deps-frontend:
+deps-update-frontend:
 	cd frontend && npm update

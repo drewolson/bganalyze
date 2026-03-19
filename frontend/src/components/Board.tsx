@@ -17,7 +17,7 @@ const CUBE_SIZE = 36;
 // Left tray holds the cube, right tray holds score info
 const LEFT_TRAY = CUBE_SIZE + 10;
 const RIGHT_TRAY = 140;
-const TOTAL_WIDTH = LEFT_TRAY + BOARD_WIDTH + RIGHT_TRAY;
+
 
 // Vertical layout: labels | board | labels
 const LABEL_HEIGHT = 16;
@@ -210,6 +210,7 @@ interface ExtendedBoardProps extends BoardProps {
   flipped?: boolean;
   arrowColor?: string;
   matchInfo?: MatchInfo;
+  hidePlayerInfo?: boolean;
 }
 
 function checkerTopY(count: number, top: boolean): number {
@@ -282,11 +283,14 @@ export default function Board({
   flipped = false,
   arrowColor = "rgba(59,130,246,0.6)",
   matchInfo,
+  hidePlayerInfo = false,
 }: ExtendedBoardProps) {
   const barCx = BAR_X + BAR_WIDTH / 2;
-  const rightTrayCx = LEFT_TRAY + BOARD_WIDTH + RIGHT_TRAY / 2;
+  const compactRight = hidePlayerInfo ? 60 : RIGHT_TRAY;
+  const rightTrayCx = LEFT_TRAY + BOARD_WIDTH + compactRight / 2;
+  const totalWidth = LEFT_TRAY + BOARD_WIDTH + compactRight;
   const matchLabel = matchLength === 0 ? "Unlimited" : `to ${matchLength}`;
-  const infoHeight = matchInfo ? 40 : 0;
+  const infoHeight = !hidePlayerInfo && matchInfo ? 40 : 0;
 
   // When flipped, player 1 is top and player 2 is bottom
   const p1Top = flipped;
@@ -303,12 +307,12 @@ export default function Board({
 
   return (
     <svg
-      viewBox={`0 ${-infoHeight} ${TOTAL_WIDTH} ${TOTAL_HEIGHT + infoHeight}`}
+      viewBox={`0 ${-infoHeight} ${totalWidth} ${TOTAL_HEIGHT + infoHeight}`}
       style={{ maxHeight: "100%", maxWidth: "100%", height: "auto", width: "auto" }}
       data-testid="board"
     >
-      {/* Match info above board */}
-      {matchInfo && (
+      {/* Match info above board (desktop only) */}
+      {!hidePlayerInfo && matchInfo && (
         <g>
           {/* Player 1: name + PR right-aligned to left of center */}
           <text x={barCx - 40} y={-infoHeight + 14} textAnchor="end" fontSize={12} fontWeight="bold" fill="#333">
@@ -409,26 +413,27 @@ export default function Board({
         </text>
       </g>
 
-      {/* Right tray — top player info */}
-      <g textAnchor="middle" fontSize={10} fill="#333">
-        {players && <PlayerName name={p2Top ? players.player2 : players.player1} x={rightTrayCx} y={BOARD_Y + 20} />}
-        <text x={rightTrayCx} y={BOARD_Y + 50}>Score</text>
-        <text x={rightTrayCx} y={BOARD_Y + 72} fontSize={18} fontWeight="bold">{p2Top ? score[1] : score[0]}</text>
-        <text x={rightTrayCx} y={BOARD_Y + 88}>{matchLabel}</text>
-      </g>
-      {/* Crawford / Post-Crawford annotation centered between players */}
-      {crawfordLabel && (
-        <text x={rightTrayCx} y={BOARD_Y + BOARD_HEIGHT / 2 + 4}
-          textAnchor="middle" fontSize={10} fontWeight="bold" fill="#c00">{crawfordLabel}</text>
+      {/* Right tray — player info (hidden on mobile) */}
+      {!hidePlayerInfo && (
+        <>
+          <g textAnchor="middle" fontSize={10} fill="#333">
+            {players && <PlayerName name={p2Top ? players.player2 : players.player1} x={rightTrayCx} y={BOARD_Y + 20} />}
+            <text x={rightTrayCx} y={BOARD_Y + 50}>Score</text>
+            <text x={rightTrayCx} y={BOARD_Y + 72} fontSize={18} fontWeight="bold">{p2Top ? score[1] : score[0]}</text>
+            <text x={rightTrayCx} y={BOARD_Y + 88}>{matchLabel}</text>
+          </g>
+          {crawfordLabel && (
+            <text x={rightTrayCx} y={BOARD_Y + BOARD_HEIGHT / 2 + 4}
+              textAnchor="middle" fontSize={10} fontWeight="bold" fill="#c00">{crawfordLabel}</text>
+          )}
+          <g textAnchor="middle" fontSize={10} fill="#333">
+            <text x={rightTrayCx} y={BOARD_Y + BOARD_HEIGHT - 78}>Score</text>
+            <text x={rightTrayCx} y={BOARD_Y + BOARD_HEIGHT - 56} fontSize={18} fontWeight="bold">{p2Top ? score[0] : score[1]}</text>
+            <text x={rightTrayCx} y={BOARD_Y + BOARD_HEIGHT - 40}>{matchLabel}</text>
+            {players && <PlayerName name={p2Top ? players.player1 : players.player2} x={rightTrayCx} y={BOARD_Y + BOARD_HEIGHT - 10} />}
+          </g>
+        </>
       )}
-
-      {/* Right tray — bottom player info */}
-      <g textAnchor="middle" fontSize={10} fill="#333">
-        <text x={rightTrayCx} y={BOARD_Y + BOARD_HEIGHT - 78}>Score</text>
-        <text x={rightTrayCx} y={BOARD_Y + BOARD_HEIGHT - 56} fontSize={18} fontWeight="bold">{p2Top ? score[0] : score[1]}</text>
-        <text x={rightTrayCx} y={BOARD_Y + BOARD_HEIGHT - 40}>{matchLabel}</text>
-        {players && <PlayerName name={p2Top ? players.player1 : players.player2} x={rightTrayCx} y={BOARD_Y + BOARD_HEIGHT - 10} />}
-      </g>
 
       {/* Dice */}
       {dice && dice[0] > 0 && dice[1] > 0 && (() => {
