@@ -745,7 +745,7 @@ function App() {
         })()}
         {isMobile ? (
           <div
-            style={{ position: "relative", width: "100%", flex: 1, minHeight: 0 }}
+            style={{ position: "relative", width: "100%", flex: 1, minHeight: 0, overflow: "hidden" }}
             onClick={(e) => {
               const rect = e.currentTarget.getBoundingClientRect();
               const x = e.clientX - rect.left;

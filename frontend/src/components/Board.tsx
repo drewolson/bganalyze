@@ -308,7 +308,10 @@ export default function Board({
   return (
     <svg
       viewBox={`0 ${-infoHeight} ${totalWidth} ${TOTAL_HEIGHT + infoHeight}`}
-      style={{ maxHeight: "100%", maxWidth: "100%", height: "auto", width: "auto" }}
+      width="100%"
+      height="100%"
+      style={{ display: "block" }}
+      preserveAspectRatio="xMidYMid meet"
       data-testid="board"
     >
       {/* Match info above board (desktop only) */}
