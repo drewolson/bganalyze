@@ -595,7 +595,7 @@ function App() {
   const isSummary = selectedGame === -1;
 
   return (
-    <div style={{ height: "100vh", display: "flex", flexDirection: isMobile ? "column" : "row", overflow: "hidden" }}>
+    <div style={{ height: "100dvh", maxHeight: "100vh", display: "flex", flexDirection: isMobile ? "column" : "row", overflow: "hidden", position: "fixed", inset: 0 }}>
       {/* Left panel / bottom panel on mobile: game selector + move list or summary */}
       <div style={{
         ...(isMobile
@@ -628,7 +628,7 @@ function App() {
           </div>
         )}
 
-        <div style={{ flex: 1, overflow: "auto", minHeight: 0 }}>
+        <div style={{ flex: 1, overflow: "auto", minHeight: 0, overscrollBehavior: "contain" }}>
           {isSummary && matchData ? (
             <div style={{ padding: "12px 16px" }}>
               <MatchSummary match={matchData} ply={state.phase === "viewing" ? state.ply : undefined} flipped={flipped} />
@@ -649,7 +649,7 @@ function App() {
       <div style={{
         display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center",
         padding: isMobile ? 8 : 16, minHeight: 0, overflow: "hidden",
-        ...(isMobile ? { order: 1, maxHeight: "45vh" } : { flex: 1 }),
+        ...(isMobile ? { order: 1, maxHeight: "45vh", flexShrink: 0 } : { flex: 1 }),
       }}>
         <div style={{ alignSelf: "flex-end", marginBottom: 4, display: "flex", gap: 4, alignItems: "center" }}>
           {!isMobile && (

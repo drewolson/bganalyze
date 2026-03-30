@@ -16,7 +16,7 @@ run: build
 test: test-frontend test-go
 
 test-go:
-	go test ./...
+	go test ./backend/...
 
 test-frontend:
 	cd frontend && npm test

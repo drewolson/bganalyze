@@ -1,6 +1,6 @@
 module bganalyze
 
-go 1.26.0
+go 1.26.2
 
 require go.etcd.io/bbolt v1.4.3
 
