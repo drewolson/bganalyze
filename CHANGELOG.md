@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.2.3
+
+- Increase pip count font size
+
 ## v0.2.2
 
 - Fix unintentional scrolling on mobile
