@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.2.2
+
+- Fix unintentional scrolling on mobile
+
 ## v0.2.1
 
 - Fix alternative move rendering on mobile
