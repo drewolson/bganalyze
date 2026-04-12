@@ -392,10 +392,10 @@ export default function Board({
       {/* Pip counts on the bar */}
       {pipCounts && (
         <>
-          <text x={barCx} y={p1Top ? BOARD_Y + 16 : BOARD_Y + BOARD_HEIGHT - 8}
-            textAnchor="middle" fontSize={11} fill="#333">{pipCounts[0]}</text>
-          <text x={barCx} y={p2Top ? BOARD_Y + 16 : BOARD_Y + BOARD_HEIGHT - 8}
-            textAnchor="middle" fontSize={11} fill="#333">{pipCounts[1]}</text>
+          <text x={barCx} y={p1Top ? BOARD_Y + 18 : BOARD_Y + BOARD_HEIGHT - 6}
+            textAnchor="middle" fontSize={18} fontWeight="bold" fill="#333">{pipCounts[0]}</text>
+          <text x={barCx} y={p2Top ? BOARD_Y + 18 : BOARD_Y + BOARD_HEIGHT - 6}
+            textAnchor="middle" fontSize={18} fontWeight="bold" fill="#333">{pipCounts[1]}</text>
         </>
       )}
 
