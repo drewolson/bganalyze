@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.2.4
+
+- Fix blunder icon positions
+
 ## v0.2.3
 
 - Increase pip count font size
