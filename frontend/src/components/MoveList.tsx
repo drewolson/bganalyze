@@ -127,13 +127,13 @@ export default function MoveList({
               </span>
               <span style={{ width: 24, display: "flex", gap: 2, alignItems: "center", justifyContent: "flex-end", flexShrink: 0 }}>
                 {errorTypes.move && (
-                  <svg width="8" height="8" viewBox="0 0 8 8">
-                    <circle cx="4" cy="4" r="3.5" fill="none" stroke="#888" strokeWidth="1" />
+                  <svg width="10" height="10" viewBox="0 0 10 10">
+                    <circle cx="5" cy="5" r="4" fill="none" stroke="#888" strokeWidth="1" />
                   </svg>
                 )}
                 {errorTypes.cube && (
-                  <svg width="8" height="8" viewBox="0 0 8 8">
-                    <rect x="0.5" y="0.5" width="7" height="7" fill="none" stroke="#888" strokeWidth="1" />
+                  <svg width="10" height="10" viewBox="0 0 10 10">
+                    <rect x="1" y="1" width="8" height="8" fill="none" stroke="#888" strokeWidth="1" />
                   </svg>
                 )}
               </span>
